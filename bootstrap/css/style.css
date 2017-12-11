@@ -1,0 +1,14 @@
+body{
+	padding-top: 65px;
+	}
+.footer { /* change this to bootstrap, include the left and bottom properties and ask mentor */
+	padding-top: 5px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #1F1F1F;
+	color: #FFFFFF;
+	text-align: center;
+	}

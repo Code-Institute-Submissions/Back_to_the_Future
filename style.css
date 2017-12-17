@@ -2,6 +2,10 @@ body{
 	padding-top: 50px; /* added so that the header doesn't overlap the content */
 	}
 
+.timeline-jumbotron {
+	margin-bottom: 0px;
+}
+
 /* --- Flexbox --- */
 
 /* The code for flexbox was from the advice found here https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/, i have ammended this to
@@ -21,11 +25,11 @@ fit my website however I wanted to credit them to be on the safe side */
 footer {
 	padding-top: 15px;
 	margin-top: 15px;
-	height: 50px;
+	min-height: 50px;
 	background-color: #1F1F1F;
 	color: #FFFFFF;
+	font-family: "Bungee", cursive;
 	text-align: center;
-	font-family: 'Bungee', cursive;
 	}
 
 /* --- CSS text amendments --- */
@@ -33,6 +37,7 @@ footer {
 .h1 {
 	margin-top: 1px;
 	font-family: 'Bungee', cursive;
+	text-align: center;
 }
 .center-text {
 	text-align: center;
@@ -40,10 +45,20 @@ footer {
 
 /* --- <img> amendments ---> */
 
-.copyright {
+.homepage-copyright {
 	position: absolute;
 	text-align: right;
-	right: 390px;
+	right: 395px;
+	top: 525px;
+	color: #FFFFFF;
+}
+
+.timeline-credit {
+	position: absolute;
+	text-align: right;
+	right: 395px;
+	bottom: 50px;
+	color: #FFFFFF;
 }
 
 /* --- Navbar Style --- */
@@ -57,3 +72,7 @@ footer {
 .navbar-inverse .navbar-nav>li>a {
 	color: #FFFFFF;
 }
+
+/* --- custom media queries --->
+
+/* need to add one for the iPad, screen size is 768 x 1024 */

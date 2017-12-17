@@ -1,35 +1,49 @@
 body{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	position: relative;
+	padding-top: 50px; /* added so that the header doesn't overlap the content */
 	}
+
+/* --- Flexbox --- */
+
+/* The code for flexbox was from the advice found here https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/, i have ammended this to
+fit my website however I wanted to credit them to be on the safe side */
+
+.body-custom {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.content {
+	flex: 1;
+}
+
+/* --- Footer --- */
+
 footer {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 85px;
-	width: 100%;
+	padding-top: 15px;
+	margin-top: 15px;
+	height: 50px;
 	background-color: #1F1F1F;
 	color: #FFFFFF;
 	text-align: center;
 	font-family: 'Bungee', cursive;
 	}
-.footer-paragraph {
-	margin-bottom: 0px;
-}
+
+/* --- CSS text amendments --- */
+
 .h1 {
 	margin-top: 1px;
 	font-family: 'Bungee', cursive;
 }
+.center-text {
+	text-align: center;
+}
+
+/* --- <img> amendments ---> */
+
 .copyright {
 	position: absolute;
 	text-align: right;
 	right: 390px;
-}
-.center-text {
-	text-align: center;
 }
 
 /* --- Navbar Style --- */

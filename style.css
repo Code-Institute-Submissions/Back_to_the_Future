@@ -41,6 +41,9 @@ h1 {
 	font-family: 'Bungee', cursive;
 	text-align: center;
 }
+h2, h3 {
+	font-family: 'Bungee', cursive;
+}
 .center-text {
 	text-align: center;
 }

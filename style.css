@@ -1,12 +1,22 @@
 body{
-	padding-top: 50px; /* added so that the header doesn't overlap the content */
+	padding-top: 75px; /* added so that the header doesn't overlap the content */
+	background-color: #EEEEEE;
 	}
-.jumbotron-timeline {
-	margin-bottom: 0px;
+.jumbotron {
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	margin-top: 25px;
+	border: 3px solid grey;
 }
-.box {
-	border-radius: 5px;
-	background-color: aqua;
+.jumbotron-timeline {
+	margin-top: 0px;
+}
+.box { /* adds styling around page content to match custom jumbotron styling */
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	margin-top: 25px;
+	border: 3px solid grey;
+	padding: 0px;
 }
 /* --- Flexbox --- */
 
@@ -26,7 +36,7 @@ fit my website however I wanted to credit them to be on the safe side */
 
 footer {
 	padding-top: 15px;
-	margin-top: 15px;
+	margin-top: 25px;
 	min-height: 50px;
 	background-color: #1F1F1F;
 	color: #FFFFFF;
@@ -37,7 +47,7 @@ footer {
 /* --- CSS text amendments --- */
 
 h1 {
-	/*margin-top: 1px;*/
+	margin-top: 1px;
 	font-family: 'Bungee', cursive;
 	text-align: center;
 }
@@ -54,7 +64,7 @@ h2, h3 {
 	position: absolute;
 	text-align: right;
 	right: 395px;
-	top: 525px;
+	top: 550px;
 	color: #FFFFFF;
 }
 
@@ -62,8 +72,16 @@ h2, h3 {
 	position: absolute;
 	text-align: right;
 	right: 395px;
-	bottom: 50px;
+	bottom: 0px;
 	color: #FFFFFF;
+}
+.img-style {
+	border-radius: 25px;
+	border: 3px solid orangered;
+}
+.img-center {
+	display: block;
+	margin: auto;
 }
 /* --- Navbar Style --- */
 

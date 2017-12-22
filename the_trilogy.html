@@ -58,13 +58,14 @@
 				<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 				<div class="panel-group" id="accordion">
 					<div class="panel panel-info">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
-								<a data-toggle="collapse" data-parent="#accordion"
-								href="#collapseOne">Cast</a>
-							</h3>
-						</div>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">
+									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
+									Cast
+								</h3>
+							</div>
+						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 						<div id="collapseOne" class="collapse">
 							<div class="panel-body">
@@ -77,13 +78,14 @@
 								</p>
 							</div>
 						</div>
-						<div class="panel panel-info">			
-							<div class="panel-heading">
-								<h3 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion"
-									href="#collapseTwo">Trailer</a>
-								</h3>
-							</div>
+						<div class="panel panel-info">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">	
+								<div class="panel-heading">
+									<h3 class="panel-title text-center">
+										Trailer
+									</h3>
+								</div>
+							</a>
 							<div id="collapseTwo" class="panel-collapse collapse">
 								<div class="panel-body">
 									<div class="embed-responsive embed-responsive-16by9">
@@ -93,12 +95,13 @@
 							</div>
 						</div>
 						<div class="panel panel-info">
-							<div class="panel-heading">
-								<h3 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion"
-									href="#collapseThree">Reviews</a>
-								</h3>
-							</div>
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								<div class="panel-heading">
+									<h3 class="panel-title text-center">
+										Reviews
+									</h3>
+								</div>
+							</a>
 							<div id="collapseThree" class="panel-collapse collapse">
 								<div class="panel-body">
 									<p>
@@ -233,7 +236,7 @@
 		<p>Back to the Future website by Liam Cafearo</p>
 	</footer>
 
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="jquery/jquery-3.2.1.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Trivia</title>
-	<base href="/Back_to_the_Future/">
+	<base href="/">
 	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -33,134 +33,140 @@
 				 after the brand. Add the data-target id here as well and the enable the collapse/expand behaviour by adding collapsed and navbar-collapse -->
 			<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
 				<li><a href=".">Home</a></li>
-				<li><a href="the_trilogy.html">The Trilogy</a></li>
-				<li><a href="timeline.html">Timeline</a></li>
-				<li><a href="trivia.html">Trivia</a></li>
-				<li><a href="rent_purchase.html">Rent/Purchase</a></li>
-				<li><a href="contact.html">Contact Me</a></li>
+				<li><a href="/the_trilogy.html">The Trilogy</a></li>
+				<li><a href="/timeline.html">Timeline</a></li>
+				<li><a href="/trivia.html">Trivia</a></li>
+				<li><a href="/rent_purchase.html">Rent/Purchase</a></li>
+				<li><a href="/contact.html">Contact Me</a></li>
 			</ul>
 		</div>
 	</nav>
 	<main class="content">
-		<div class="jumbotron">
+		<div class="jumbotron container">
 			<div class="container">
-				<h1 class="h1">Movie Trivia</h1>
+				<h1>Movie Trivia</h1>
 				<p>Welcome to the trivia page, here you can find out all sorts of trivia regarding the trilogy.</p>
 				<p>If you would like to contribute to the page or correct any errors please get in touch by clicking on the Contact me button below.</p>
 				<p><a class="btn btn-primary btn-default" href="contact.html">Contact Me</a></p>
 			</div>
 		</div>
-		<div class="container">
-			<!-- add panel, assign id accordion to link panels together and only having one open at a time -->
-			<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-			<div class="panel-group" id="accordion">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h2 class="panel-title">
-							<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
-							<a data-toggle="collapse" data-parent="#accordion"
-							href="#collapseOne">Back to the Future</a>
-						</h2>
-					</div>
-					<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-					<div id="collapseOne" class="panel-collapse collapse in">
-						<div class="panel-body">
-							<h3>Title1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h3>Title2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h3>Title3</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
+		<div class="container box">
+			<div class="container">
+				<h4 class="center-text">
+					Click on the titles below to expain the section. <!-- possibly remove this and add some padding to the box -->
+				</h4>
+			</div>
+			<div class="container">
+				<!-- add panel, assign id accordion to link panels together and only having one open at a time -->
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
+								<a data-toggle="collapse" data-parent="#accordion"
+								href="#collapseOne">Back to the Future</a>
+							</h2>
+						</div>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<div id="collapseOne" class="collapse">
+							<div class="panel-body">
+								<h3>Title1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<h3>Title2</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<h3>Title3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-info">			
-					<div class="panel-heading">
-						<h2 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion"
-							href="#collapseTwo">Back to the Future Part II</a>
-						</h2>
-					</div>
-					<div id="collapseTwo" class="panel-collapse collapse">
-						<div class="panel-body">
-							<h3>Title1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h3>Title2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h3>Title3</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
+					<div class="panel panel-info">			
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion"
+								href="#collapseTwo">Back to the Future Part II</a>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h3>Title1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<h3>Title2</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<h3>Title3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h2 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion"
-							href="#collapseThree">Back to the Future Part III</a>
-						</h2>
-					</div>
-					<div id="collapseThree" class="panel-collapse collapse">
-						<div class="panel-body">
-							<h3>Title1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h3>Title2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h3>Title3</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion"
+								href="#collapseThree">Back to the Future Part III</a>
+							</h2>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h3>Title1</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<h3>Title2</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<h3>Title3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -171,7 +177,7 @@
 		<p>Back to the Future website by Liam Cafearo</p>
 	</footer>
 
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="jquery/jquery-3.2.1.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>

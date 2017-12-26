@@ -43,7 +43,7 @@
 	</nav>
 	<main class="content">
 		<div class="jumbotron container">
-			<div class="container">
+			<div class="container text-center">
 				<h1>Movie Trivia</h1>
 				<p>Welcome to the trivia page, here you can find out all sorts of trivia regarding the trilogy.</p>
 				<p>If you would like to contribute to the page or correct any errors please get in touch by clicking on the Contact me button below.</p>
@@ -60,13 +60,13 @@
 				<!-- add panel, assign id accordion to link panels together and only having one open at a time -->
 				<div class="panel-group" id="accordion">
 					<div class="panel panel-info">
-						<div class="panel-heading">
-							<h2 class="panel-title">
-								<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
-								<a data-toggle="collapse" data-parent="#accordion"
-								href="#collapseOne">Back to the Future</a>
-							</h2>
-						</div>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+							<div class="panel-heading">
+								<h2 class="panel-title text-center">
+									Back to the Future
+								</h2>
+							</div>
+						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 						<div id="collapseOne" class="collapse">
 							<div class="panel-body">
@@ -97,13 +97,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-info">			
-						<div class="panel-heading">
-							<h2 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion"
-								href="#collapseTwo">Back to the Future Part II</a>
-							</h2>
-						</div>
+					<div class="panel panel-info">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">			
+							<div class="panel-heading">
+								<h2 class="panel-title center-text">
+									Back to the Future Part II
+								</h2>
+							</div>
+						</a>
 						<div id="collapseTwo" class="panel-collapse collapse">
 							<div class="panel-body">
 								<h3>Title1</h3>
@@ -134,12 +135,13 @@
 						</div>
 					</div>
 					<div class="panel panel-info">
-						<div class="panel-heading">
-							<h2 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion"
-								href="#collapseThree">Back to the Future Part III</a>
-							</h2>
-						</div>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							<div class="panel-heading">
+								<h2 class="panel-title center-text">
+									Back to the Future Part III
+								</h2>
+							</div>
+						</a>
 						<div id="collapseThree" class="panel-collapse collapse">
 							<div class="panel-body">
 								<h3>Title1</h3>

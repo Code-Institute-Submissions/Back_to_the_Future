@@ -1,7 +1,7 @@
 body{
 	padding-top: 75px; /* added so that the header doesn't overlap the content */
 	background-color: #EEEEEE;
-	background-image: url(../images/space_four.jpeg);
+	background-image: url(./images/space_four.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	}

@@ -1,7 +1,11 @@
 body{
 	padding-top: 75px; /* added so that the header doesn't overlap the content */
 	background-color: #EEEEEE;
+	background-image: url(../images/space_four.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	}
+
 .jumbotron {
 	background-color: #FFFFFF;
 	border-radius: 25px;
@@ -30,6 +34,12 @@ fit my website however I wanted to credit them to be on the safe side */
 }
 .content {
 	flex: 1;
+}
+/* .carousel-container {
+	padding: 0px;
+} */
+.container-custom {
+	padding: 15px;
 }
 
 /* --- Footer --- */
@@ -63,7 +73,7 @@ h2, h3 {
 
 /* --- <img> amendments ---> */
 
-.homepage-copyright {
+/* .homepage-copyright {
 	position: absolute;
 	text-align: right;
 	right: 395px;
@@ -77,7 +87,8 @@ h2, h3 {
 	right: 395px;
 	bottom: 0px;
 	color: #FFFFFF;
-}
+} */
+
 .img-style {
 	border-radius: 25px;
 	border: 3px solid orangered;

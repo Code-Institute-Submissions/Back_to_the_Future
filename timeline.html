@@ -8,6 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' type='text/css' href='../lib/bootstrap/css/bootstrap.min.css' />
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<!-- link to vis library for timeline, library is courtesy of 'http://visjs.org' -->
+	<link rel="stylesheet" href="../lib/vis/dist/vis.css" type="text/css">
+	<script src="../lib/vis/dist/vis.js"></script>
 </head>
 <body class="body-custom">
 	<!-- nav element with class navbar and we have changed the color by replacing deafult stylying 'navbar-default' with 'navbar-inverse'
@@ -51,17 +54,35 @@
 				</p>
 			</div>
 		</div>
-		<div>
-			<img class="img-center img-style" src="../images/under_construction.jpeg" alt="Under Construction" width="1171" height="550" />
-			<!-- <p class="timeline-credit"> 
-				Photo by Fernando Arcos from <a href="https://www.pexels.com/photo/under-construction-signage-on-laptop-keyboard-211122/">Pexels</a>
-			</p> -->
+		<div class="container box">
+			<!-- The code from below is from 'http://visjs.org' in order to display the timeline, there are some changes i.e. the dates to suit my requirments -->
+			<div id="visualization"></div>
+			<script type="text/javascript">
+				// DOM element where the Timeline will be attached
+				var container = document.getElementById('visualization');
+
+				// Create a DataSet (allows two way data-binding)
+				var items = new vis.DataSet([
+					{id: 1, content: 'item 1', start: '2013-04-20'},
+					{id: 2, content: 'item 2', start: '2013-04-14'},
+					{id: 3, content: 'item 3', start: '2013-04-18'},
+					{id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
+					{id: 5, content: 'item 5', start: '2013-04-25'},
+					{id: 6, content: 'item 6', start: '2013-04-27'}
+				]);
+
+				//  Configuration for the Timeline
+				var options = {};
+
+				//  Create a Timeline
+				var timeline = new vis.Timeline(container, items, options);
+			</script>
 		</div>
 	</main>
 	<footer class="col-12">
 		<p>Back to the Future website by Liam Cafearo</p>
 	</footer>
-
+	
 	<script src="../lib/jquery/jquery-3.2.1.js"></script>
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 

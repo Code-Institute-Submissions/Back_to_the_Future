@@ -7,9 +7,11 @@
 	<base href="/">
 	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' type='text/css' href='../lib/bootstrap/css/bootstrap.min.css' />
-	<link rel="stylesheet" type="text/css" href="../style.css">
 	<!-- link to vis library for timeline, library is courtesy of 'http://visjs.org' -->
 	<link rel="stylesheet" href="../lib/vis/dist/vis.css" type="text/css">
+	<!-- placed stylesheet here so that it overides the vis stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<!-- link to vis JavaScript -->
 	<script src="../lib/vis/dist/vis.js"></script>
 </head>
 <body class="body-custom">
@@ -46,15 +48,22 @@
 	</nav>
 	<main class="content">
 		<div class="jumbotron jumbotron-timeline container">
-			<div class="container">
+			<div class="container text-center">
 				<h1> The Timeline</h1>
 				<!--<p>The timeline below points out major points in the movies in the chronological order that they happened</p>-->
 				<p>
-					The timeline is currently under construction as we have run out of plutonium, lets hope those pesky Libyan terrorists don't find us again!
+					Below you will find two timelines, the original timeline and the timeline with the altered events. I have taken the timeline information from
+					the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, which is also worth checking out!
+				</p>
+				<p>
+					If you  find any discrepancies please get in touch! you can get in touch using the link below.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-default" href="contact.html">Contact Me</a>
 				</p>
 			</div>
 		</div>
-		<div class="container box">
+		<div class="container box timeline-box">
 			<!-- The code from below is from 'http://visjs.org' in order to display the timeline, there are some changes i.e. the dates to suit my requirments -->
 			<div id="visualization"></div>
 			<script type="text/javascript">

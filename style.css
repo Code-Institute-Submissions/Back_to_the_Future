@@ -22,6 +22,9 @@ body{
 	border: 3px solid grey;
 	padding: 0px;
 }
+.timeline-box {
+	padding: 5px;
+}
 /* --- Flexbox --- */
 
 /* The code for flexbox was from the advice found here https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/, i have ammended this to
@@ -71,24 +74,6 @@ h2, h3 {
 	text-align: justify;
 }
 
-/* --- <img> amendments ---> */
-
-/* .homepage-copyright {
-	position: absolute;
-	text-align: right;
-	right: 395px;
-	top: 550px;
-	color: #FFFFFF;
-}
-
-.timeline-credit {
-	position: absolute;
-	text-align: right;
-	right: 395px;
-	bottom: 0px;
-	color: #FFFFFF;
-} */
-
 .img-style {
 	border-radius: 25px;
 	border: 3px solid orangered;
@@ -115,6 +100,9 @@ h2, h3 {
 	margin-top: 0px;
 }
 
+.vis-timeline {
+	border: none;
+}
 /* --- custom media queries --->
 
 /* need to add one for the iPad, screen size is 768 x 1024 */

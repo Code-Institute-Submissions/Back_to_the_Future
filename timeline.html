@@ -52,8 +52,14 @@
 				<h1> The Timeline</h1>
 				<!--<p>The timeline below points out major points in the movies in the chronological order that they happened</p>-->
 				<p>
-					Below you will find two timelines, the original timeline and the timeline with the altered events. I have taken the timeline information from
-					the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, which is also worth checking out!
+					The timeline below is only a brief timeline to give you an idea of the order of events. I have taken the timeline information from
+					the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, which I would checkout for a
+					more complete explination of the timeline(s).
+				</p>
+				<p>
+					To gather more specific dates and times you can zoom in and out by either using the mouse wheel or if your are on a smartphone or tablet you can 
+					pinch to zoom. The timeline can also be moved from left to right by either pressing down and holding the left-click on the mouse or using you fingers
+					if on a smartphone or tablet.
 				</p>
 				<p>
 					If you  find any discrepancies please get in touch! you can get in touch using the link below.
@@ -63,7 +69,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="container box timeline-box">
+		<div class=" container box timeline-box">
 			<!-- The code from below is from 'http://visjs.org' in order to display the timeline, there are some changes i.e. the dates to suit my requirments -->
 			<div id="visualization"></div>
 			<script type="text/javascript">
@@ -72,12 +78,16 @@
 
 				// Create a DataSet (allows two way data-binding)
 				var items = new vis.DataSet([
-					{id: 1, content: 'item 1', start: '2013-04-20'},
-					{id: 2, content: 'item 2', start: '2013-04-14'},
-					{id: 3, content: 'item 3', start: '2013-04-18'},
-					{id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
-					{id: 5, content: 'item 5', start: '2013-04-25'},
-					{id: 6, content: 'item 6', start: '2013-04-27'}
+					{id: 1, content: "Libyan terrorist steal plutonium from the local power plant so Doc can build them a nuclear weapon. It is dismissed by the FBI as a 'simple clerical error'.", start: "1985-10-12"},
+					{id: 2, content: "Opening titles of 'Back to the Future': all the clocks in Doc's lab are set 25 minutes slow, displayed incorrectly as 7:53 a.m.", start: "1985-10-25, 08:18"},
+					{id: 3, content: "Doc asks Marty to meet him at Twin Pines Mall at 1:15 a.m. next morning.", start: "1985-10-25, 08:25"},
+					{id: 4, content: "Doc calls Marty to stop by at his garage to pick up his JVC camcorder.", start: "1985-10-26, 00:28"},
+					{id: 5, content: "Marty arrives at Twin Pines Mall.", start: "1985-10-26, 01:16"},
+					{id: 6, content: "Doc demonstrates Temporal Experiment #1.", start: "1985-10-26, 01:18"},
+					{id: 7, content: "Temporal Experiment #1 proves to be a success. Einstein becomes the world's first time traveler by departing one minute into the future.", start: "1985-10-26, 01:20"},
+					{id: 8, content: "Einstein arrives at one minute into the future.", start: "1985-10-26, 01:21"},
+					{id: 9, content: "Emmett Brown is shot dead by Libyan terrorists.", start: "1985-10-26, 01:33"},
+					{id: 10, content: "Marty flees from the Libyans in the DeLorean and accidentally departs 1985 for 1955 by accelerating to 88 m.p.h.", start: "1985-10-26, 01:35"}
 				]);
 
 				//  Configuration for the Timeline

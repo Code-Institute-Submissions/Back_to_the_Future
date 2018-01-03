@@ -48,18 +48,13 @@
 	</nav>
 	<main class="content">
 		<div class="jumbotron jumbotron-timeline container">
-			<div class="container text-center">
+			<div class="text-center">
 				<h1> The Timeline</h1>
 				<!--<p>The timeline below points out major points in the movies in the chronological order that they happened</p>-->
 				<p>
-					The timeline below is only a brief timeline to give you an idea of the order of events. I have taken the timeline information from
-					the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, which I would checkout for a
-					more complete explination of the timeline(s).
-				</p>
-				<p>
-					To gather more specific dates and times you can zoom in and out by either using the mouse wheel or if your are on a smartphone or tablet you can 
-					pinch to zoom. The timeline can also be moved from left to right by either pressing down and holding the left-click on the mouse or using you fingers
-					if on a smartphone or tablet.
+					The timeline below is only a brief timeline to give you an idea of the order of events, some of the times I have estimated as the specific times
+					are not made apparent in the movies. I have taken the timeline information from the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, 
+					which I would checkout for a more complete explination of the timeline(s).
 				</p>
 				<p>
 					If you  find any discrepancies please get in touch! you can get in touch using the link below.
@@ -69,7 +64,16 @@
 				</p>
 			</div>
 		</div>
-		<div class=" container box timeline-box">
+		<div class="col-12 box timeline-box">
+			<div>
+				<p class="center-text">
+					To gather more specific dates and times you can zoom in and out by either using the mouse wheel or if your are on a smartphone or tablet you can 
+					pinch to zoom.
+					<br>
+					The timeline can also be moved from left to right by either pressing down and holding the left-click on the mouse or using you fingers
+					if on a smartphone or tablet.
+				</p>
+			</div>
 			<!-- The code from below is from 'http://visjs.org' in order to display the timeline, there are some changes i.e. the dates to suit my requirments -->
 			<div id="visualization"></div>
 			<script type="text/javascript">
@@ -87,7 +91,10 @@
 					{id: 7, content: "Temporal Experiment #1 proves to be a success. Einstein becomes the world's first time traveler by departing one minute into the future.", start: "1985-10-26, 01:20"},
 					{id: 8, content: "Einstein arrives at one minute into the future.", start: "1985-10-26, 01:21"},
 					{id: 9, content: "Emmett Brown is shot dead by Libyan terrorists.", start: "1985-10-26, 01:33"},
-					{id: 10, content: "Marty flees from the Libyans in the DeLorean and accidentally departs 1985 for 1955 by accelerating to 88 m.p.h.", start: "1985-10-26, 01:35"}
+					{id: 10, content: "Marty flees from the Libyans in the DeLorean and accidentally departs 1985 for 1955 by accelerating to 88 m.p.h.", start: "1985-10-26, 01:35"},
+					{id: 11, content: "Marty McFly arrives in 1955, on Old Man Peabody's farm, and knocks down one of Otis Peabody's twin pine trees.", start: "1955-11-05, 06:15"},
+					{id: 12, content: "Marty arrives in downtown Hill Valley, and steps into Lou's Cafe, where he meets George McFly.", start: "1955-11-05, 08:29"},
+					{id: 13, content: "Marty pushes George out of the way of Sam Baines's car and gets knocked unconscious, thus interfering with George's first meeting with Lorraine Baines.", start: "1955-11-05, 09:00", ends: "1955-11-05, 18:00"},
 				]);
 
 				//  Configuration for the Timeline

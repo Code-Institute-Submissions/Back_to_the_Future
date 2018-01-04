@@ -22,9 +22,13 @@ body{
 	border: 3px solid grey;
 	padding: 0px;
 }
+
+/* timeline styling */
+
 .timeline-box {
 	padding: 5px;
 }
+
 /* --- Flexbox --- */
 
 /* The code for flexbox was from the advice found here https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/, i have ammended this to

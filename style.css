@@ -12,9 +12,6 @@ body{
 	margin-top: 25px;
 	border: 3px solid grey;
 }
-.jumbotron-timeline {
-	margin-top: 0px;
-}
 .box { /* adds styling around page content to match custom jumbotron styling */
 	background-color: #FFFFFF;
 	border-radius: 25px;
@@ -68,7 +65,7 @@ h1 {
 	font-family: 'Bungee', cursive;
 	text-align: center;
 }
-h2, h3 {
+h2, h3, h4 {
 	font-family: 'Bungee', cursive;
 }
 .center-text {

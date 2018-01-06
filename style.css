@@ -12,9 +12,6 @@ body{
 	margin-top: 25px;
 	border: 3px solid grey;
 }
-.jumbotron-timeline {
-	margin-top: 0px;
-}
 .box { /* adds styling around page content to match custom jumbotron styling */
 	background-color: #FFFFFF;
 	border-radius: 25px;
@@ -22,6 +19,13 @@ body{
 	border: 3px solid grey;
 	padding: 0px;
 }
+
+/* timeline styling */
+
+.timeline-box {
+	padding: 5px;
+}
+
 /* --- Flexbox --- */
 
 /* The code for flexbox was from the advice found here https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/, i have ammended this to
@@ -61,7 +65,7 @@ h1 {
 	font-family: 'Bungee', cursive;
 	text-align: center;
 }
-h2, h3 {
+h2, h3, h4, {
 	font-family: 'Bungee', cursive;
 }
 .center-text {
@@ -70,24 +74,6 @@ h2, h3 {
 .justify-text {
 	text-align: justify;
 }
-
-/* --- <img> amendments ---> */
-
-/* .homepage-copyright {
-	position: absolute;
-	text-align: right;
-	right: 395px;
-	top: 550px;
-	color: #FFFFFF;
-}
-
-.timeline-credit {
-	position: absolute;
-	text-align: right;
-	right: 395px;
-	bottom: 0px;
-	color: #FFFFFF;
-} */
 
 .img-style {
 	border-radius: 25px;
@@ -115,6 +101,9 @@ h2, h3 {
 	margin-top: 0px;
 }
 
+.vis-timeline {
+	border: none;
+}
 /* --- custom media queries --->
 
 /* need to add one for the iPad, screen size is 768 x 1024 */

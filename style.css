@@ -65,7 +65,7 @@ h1 {
 	font-family: 'Bungee', cursive;
 	text-align: center;
 }
-h2, h3, h4, {
+h2, h3, h4 {
 	font-family: 'Bungee', cursive;
 }
 .center-text {
@@ -104,6 +104,3 @@ h2, h3, h4, {
 .vis-timeline {
 	border: none;
 }
-/* --- custom media queries --->
-
-/* need to add one for the iPad, screen size is 768 x 1024 */

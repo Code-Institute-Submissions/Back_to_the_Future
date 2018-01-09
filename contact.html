@@ -52,18 +52,23 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- the below is taken form the bootstrap form guidelines however I have built on top of that to make it my own form -->
-					<form name="contactForm" onsubmit="return formValidation()" id="contactForm" method="get">
-						<div class="form-group">
-							<label for="firstname"> Firstname: </label>
-							<input type="text" class="form-control" name="fname" id="firstname" placeholder="Enter your firstname here" autocomplete="on" />
+					<form name="contactForm" onsubmit="return formValidation()" method="get">
+						<div class="center-text">
+							<p>
+								Fields marked with a <span style="color:red">*</span> denote that these fields are required.
+							</p>
 						</div>
 						<div class="form-group">
-							<label for="surname"> Surname: </label>
-							<input type="text" class="form-control" name="sname" id="surname" placeholder="Enter your surname here" autocomplete="on"/>
+							<label for="firstname"><span style="color:red">*</span>Firstname:</label>
+							<input type="text" class="form-control" name="fname" id="firstname" placeholder="Enter your firstname here" autocomplete="on" required />
 						</div>
 						<div class="form-group">
-							<label for="email"> Email: </label>
-							<input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email here" autocomplete="on"/>
+							<label for="surname"><span style="color:red">*</span>Surname:</label>
+							<input type="text" class="form-control" name="sname" id="surname" placeholder="Enter your surname here" autocomplete="on" required />
+						</div>
+						<div class="form-group">
+							<label for="email"><span style="color:red">*</span>Email:</label>
+							<input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email here" autocomplete="on" required />
 						</div>
 						<div class="form-group">
 							<label for="message"> Message: </label>

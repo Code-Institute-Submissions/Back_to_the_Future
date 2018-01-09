@@ -104,3 +104,12 @@ h2, h3, h4 {
 .vis-timeline {
 	border: none;
 }
+
+/* Contact Form Styling */
+
+/* had to consult the w3schools and MDN pages for this */
+
+input:focus:invalid {
+	box-shadow: 5px 10px 10px #888888;
+	border: 1px solid red;
+}

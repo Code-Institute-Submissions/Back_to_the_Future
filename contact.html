@@ -45,40 +45,58 @@
 		<div class="jumbotron container">
 			<div class="container">
 				<h1>Contact Me</h1>
-				<p class="center-text">Please use the form below to contact me, I look forward to hearing from you.</p>
+				<p class="text-center">Please use the form below to contact me, I look forward to hearing from you.</p>
 			</div>
 		</div>
 		<div class="container container-custom box">
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- the below is taken form the bootstrap form guidelines however I have built on top of that to make it my own form -->
-					<form name="contactForm" onsubmit="return formValidation()" method="get">
-						<div class="center-text">
+					<form name="contactForm" method="get">
+						<div class="text-center">
 							<p>
 								Fields marked with a <span style="color:red">*</span> denote that these fields are required.
 							</p>
 						</div>
 						<div class="form-group">
 							<label for="firstname"><span style="color:red">*</span>Firstname:</label>
-							<input type="text" class="form-control" name="fname" id="firstname" placeholder="Enter your firstname here" autocomplete="on" required />
+							<input type="text" class="form-control" name="fname" id="firstname" placeholder="Enter your firstname here" autocomplete="on" />
 						</div>
 						<div class="form-group">
 							<label for="surname"><span style="color:red">*</span>Surname:</label>
-							<input type="text" class="form-control" name="sname" id="surname" placeholder="Enter your surname here" autocomplete="on" required />
+							<input type="text" class="form-control" name="sname" id="surname" placeholder="Enter your surname here" autocomplete="on" />
 						</div>
 						<div class="form-group">
 							<label for="email"><span style="color:red">*</span>Email:</label>
-							<input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email here" autocomplete="on" required />
+							<input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email here" autocomplete="on" />
 						</div>
 						<div class="form-group">
 							<label for="message"> Message: </label>
 							<textarea class="form-control" name="message" rows="10" id="message" placeholder="Please enter your message here..."></textarea>
 						</div>
 						<div>
-							<button type="submit" class="btn btn-default">Submit</button>
+							<button type="submit" id="submitButton" class="btn btn-default">Submit</button>
 						</div>
 					</form>
 				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel">
+			<div class="modal-dialog" role="document">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="errorModalLabel">Error!</h4>
+					</div>
+					<div class="modal-body">
+						<p>Please fill in the fields marked with a <span style="color:red">*</span> as this denotes that these fields are required.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</main>

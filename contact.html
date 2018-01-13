@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Me</title>
-	<base href="/Back_to_the_Future/">
+	<base href="/">
 	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' type='text/css' href='./lib/bootstrap/css/bootstrap.min.css' />
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="icon" href="./images/favicon.ico" type="image/gif" sizes="16x16">
 </head>
 <body class="body-custom">
 	<!-- nav element with class navbar and we have changed the color by replacing deafult stylying 'navbar-default' with 'navbar-inverse'
@@ -81,17 +82,35 @@
 				</div>
 			</div>
 		</div>
-		<!-- Modal -->
+		<!-- Error message Modal -->
 		<div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel">
 			<div class="modal-dialog" role="document">
 				<!-- Modal content -->
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="errorModalLabel">Error!</h4>
+						<h4 class="modal-title text-center" id="errorModalLabel">Error</h4>
 					</div>
 					<div class="modal-body">
-						<p>Please fill in the fields marked with a <span style="color:red">*</span> as this denotes that these fields are required.</p>
+						<p class="text-center">Please fill in the fields marked with a <span style="color:red">*</span> as this denotes that these fields are required.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<!-- Success message Modal -->
+		<div id="successModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel">
+			<div class="modal-dialog" role="document">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title text-center" id="errorModalLabel">Success</h4>
+					</div>
+					<div class="modal-body">
+						<p class="text-center">Thank you for taking the time to contact me.</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

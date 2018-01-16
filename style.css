@@ -20,11 +20,6 @@ body{
 	padding: 0px;
 }
 
-/* timeline styling */
-
-.timeline-box {
-	padding: 5px;
-}
 
 /* --- Flexbox --- */
 
@@ -39,9 +34,6 @@ fit my website however I wanted to credit them to be on the safe side */
 .content {
 	flex: 1;
 }
-/* .carousel-container {
-	padding: 0px;
-} */
 .container-custom {
 	padding: 15px;
 }
@@ -70,7 +62,7 @@ h2, h3, h4 {
 }
 .img-style {
 	border-radius: 25px;
-	border: 3px solid orangered;s
+	border: 3px solid orangered;
 }
 .img-center {
 	display: block;
@@ -90,8 +82,16 @@ h2, h3, h4 {
 
 /* --- acordion styles --> */
 
+/* remove top margin */
+
 .panel-group .panel+.panel {
 	margin-top: 0px;
+}
+
+/* Timeline styles */
+
+.timeline-box {
+	padding: 5px;
 }
 
 .vis-timeline {

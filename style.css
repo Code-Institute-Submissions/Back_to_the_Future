@@ -20,11 +20,6 @@ body{
 	padding: 0px;
 }
 
-/* timeline styling */
-
-.timeline-box {
-	padding: 5px;
-}
 
 /* --- Flexbox --- */
 
@@ -39,9 +34,6 @@ fit my website however I wanted to credit them to be on the safe side */
 .content {
 	flex: 1;
 }
-/* .carousel-container {
-	padding: 0px;
-} */
 .container-custom {
 	padding: 15px;
 }
@@ -68,14 +60,36 @@ h1 {
 h2, h3, h4 {
 	font-family: 'Bungee', cursive;
 }
-.img-style {
-	border-radius: 25px;
-	border: 3px solid orangered;s
+
+/* Accordion styling */
+
+h2.trilogy-headings {
+	font-size: 20px;
 }
-.img-center {
-	display: block;
-	margin: auto;
+
+.panel-group {
+	margin-top: 25px;
 }
+
+.panel-primary {
+	background-color: #337ab7;
+}
+
+.panel-title {
+	color: #FFFFFF;
+}
+
+.panel-body {
+	background-color: #FFFFFF;
+}
+
+/* remove top margin */
+
+/* .panel-group .panel+.panel { /* this removes the top line of the panel
+	margin-top: 0px;
+	margin-bottom: 0px;
+} */
+
 /* --- Navbar Style --- */
 
 .navbar-inverse {
@@ -88,10 +102,10 @@ h2, h3, h4 {
 	color: #FFFFFF;
 }
 
-/* --- acordion styles --> */
+/* Timeline styles */
 
-.panel-group .panel+.panel {
-	margin-top: 0px;
+.timeline-box {
+	padding: 5px;
 }
 
 .vis-timeline {

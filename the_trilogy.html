@@ -114,49 +114,71 @@
 			</div>
 		</div>
 		<div class="jumbotron container">
-			<div class="container">
+			<div>
 				<h1>The Trilogy</h1>
 				<p class="text-center">Below you can find out about each films plot, cast, trailers and more!</p>
 			</div>
 		</div>
 		<div class="container box">
-			<div class="container">
+			<!-- click info -->
+			<div class="container col-md-12">
 				<h4 class="text-center">Click on each section to expand for more information.</h4>
-				<h2 class="text-center">Back to the Future</h2>
 			</div>
-			<div class="container">
-				<!-- add panel, assign id accordion to link panels together and only having one open at a time -->
-				<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+			<!-- Back to the Future -->
+			<div class="container col-md-4">
+				<!-- Movie Title -->
+				<div>
+					<h2 class="text-center trilogy-headings">Back to the Future</h2>
+				</div>
+				<!-- Movie Poster -->
+				<div>
+					<img class="center-block trilogyPoster" id="moviePoster" src="" alt="Movie Poster" width="182" height="268">
+				</div>
+				<!-- Acordion -->
 				<div class="panel-group" id="accordion">
-					<div class="panel">
+					<!-- Plot Summary -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
-									Overview
+									Plot Summary
 								</h3>
 							</div>
 						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 						<div id="collapseOne" class="collapse">
-							<div class="panel-body">
-								<p>
-									Back to the Future follows the adventures of Marty McFly who is sent back in time by his friend Dr. Emmett "Doc" Brown.
-									The two must repair the damage they have caused to history and find a way to return to 1985.
-								</p>
-							</div>
+							<div class="panel-body" id="plotSummary"></div>
 						</div>
 					</div>
-					<div class="panel">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+					<!-- Cast -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
-									Plot
+									Cast
 								</h3>
 							</div>
 						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<div id="collapseThree" class="collapse">
+							<div class="panel-body" id="Actors">
+								<ul id="actorList"></ul>
+							</div>
+						</div>
+					</div>
+					<!-- Plot -->
+					<!-- <div class="panel col-md-12">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">
+									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together
+									Plot
+								</h3>
+							</div>
+						</a>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially
 						<div id="collapseTwo" class="collapse">
 							<div class="panel-body">
 								<h4 class="text-center">
@@ -214,426 +236,365 @@
 								</p>
 							</div>
 						</div>
+					</div> -->
+					<!-- Trailer -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">	
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Trailer
+								</h3>
+							</div>
+						</a>
+						<div id="collapseFour" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/qvsgGtivCgs" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="panel">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					<!-- Reviews -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Reviews
+								</h3>
+							</div>
+						</a>
+						<div id="collapseFive" class="panel-collapse collapse">
+							<div class="panel-body" id="reviews">
+							</div>
+						</div>
+					</div>
+					<!-- <div class="panel col-md-6">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
-									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
+									Trivia
+								</h3>
+							</div>
+						</a>
+						<div id="collapseSeven" class="panel-collapse collapse">
+							<div class="text-center panel-body">
+								<p>
+									If you're one of those film geeks who loves trivia then I suggest you head over to the link below!
+								</p>
+							</div>
+							<div class="text-center">
+								<a class="btn btn-primary" href="http://www.imdb.com/title/tt0088763/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<!-- Back to the Future Part II -->
+			<div class="container col-md-4">
+				<!-- Movie Title -->
+				<div>
+					<h2 class="text-center trilogy-headings">Back to the Future Part II</h2>
+				</div>
+				<!-- Movie Poster -->
+				<div>
+					<img class="center-block trilogyPoster" id="moviePoster2" src="" alt="Movie Poster" width="182" height="268">
+				</div>
+				<!-- Accordion -->
+				<div class="panel-group" id="accordionTwo">
+					<!-- Plot Summary -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseEight">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Plot Summary
+								</h3>
+							</div>
+						</a>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<div id="collapseEight" class="collapse">
+							<div class="panel-body" id="plotSummary2"></div>
+						</div>
+					</div>
+					<!-- Cast -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTen">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Cast
 								</h3>
 							</div>
 						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-						<div id="collapseThree" class="collapse">
+						<div id="collapseTen" class="collapse">
 							<div class="panel-body">
-								<p class="text-center">
-									Below is a list of the main cast, for a more detailed cast list I would recommend checking out the full cast list at 
-									<a href="http://www.imdb.com/title/tt0088763/fullcredits?ref_=tt_cl_sm#cast" target="blank">imdb.com</a>
+								<ul id="actorList2"></ul>
+							</div>
+						</div>
+					</div>
+					<!-- Plot -->
+					<!-- <div class="panel col-md-12">
+						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseNine">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">
+									Plot
+								</h3>
+							</div>
+						</a>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially
+						<div id="collapseNine" class="collapse">
+							<div class="panel-body">
+								<h4 class="text-center">
+									<strong>Warning this section contains spoilers!</strong>
+								</h4>
+								<p>
+									On October 26, 1985, Dr. Emmett Brown arrives in the DeLorean time machine and persuades Marty McFly and his girlfriend, 
+									Jennifer Parker, to travel to the future with him, and help their future children. Biff Tannen witnesses their departure. 
+									They arrive on October 21, 2015, where Doc electronically knocks out Jennifer, and leaves her asleep in an alley, 
+									explaining that she should not have too much knowledge of future events. He has Marty pose as his own son and lookalike 
+									Marty Jr. to refuse an offer to participate in a robbery with Biff's grandson Griff, thus saving both of Marty's children 
+									from prison.
 								</p>
-								<ul>
-									<li>Michael J. Fox as Marty McFly</li>
-									<li>Christoper Lloyd as Dr. Emmett "Doc" Brown</li>
-									<li>Lea Thompson as Lorraine Baines-McFly</li>
-									<li>Crispin Glover as George McFly</li>
-									<li>Thomas F.Wilson as Biff Tannen</li>
-								</ul>
+								<p>
+									Marty switches places with Marty Jr. and refuses Griff's offer, but Griff goads Marty into a fight. 
+									Griff and his gang are arrested, saving Marty's future children. Before rejoining Doc, Marty purchases an almanac, 
+									containing the results of major sporting events from 1950 to 2000. Doc discovers it and warns Marty about attempting to 
+									profit from time travel, but before Doc can adequately dispose of it, they are interrupted by the police, who have found 
+									Jennifer incapacitated, and are taking her to her 2015 home. They pursue, as does Biff, who has overheard their conversation, 
+									and picked up the almanac that Doc discarded.
+								</p>
+								<p>
+									Jennifer wakes up in her 2015 home and hides from the McFly family. She overhears that her future self's life with Marty is not what she expected, 
+									due to his involvement in an automobile accident. She witnesses Marty being goaded by his co-worker, Douglas J. Needles, into a shady business deal, 
+									which leads to Marty's firing. Attempting to escape the house, Jennifer encounters her 2015 self and they both faint. While Marty and Doc attend to her, 
+									Biff steals the time machine and uses it to travel back to 1955 and give the almanac to his younger self to get rich betting, then returns to 2015. Marty, 
+									Doc, and an unconscious Jennifer return to 1985, unaware of Biff's actions.	
+								</p>
+								<p>
+									The 1985 they return to has altered: Biff has become wealthy and corrupt, and has changed Hill Valley into a chaotic dystopia. 
+									Marty's father, George, was killed in 1973 and Biff has forced Marty's mother, Lorraine, to marry him. Doc has been committed to an insane asylum. 
+									Marty and Doc determine that the 2015 Biff took the time machine to change 1985, and Marty learns from the alternate 1985 Biff that he got the almanac on 
+									November 12, 1955. Biff attempts to confront Marty, but Marty flees and returns to 1955 with Doc, leaving Jennifer on her own front porch.
+								</p>
+								<p>
+									Marty secretly follows the 1955 Biff, and watches him receive the almanac from his 2015 self. Marty then follows him to the high school's dance, 
+									being careful to avoid interrupting the events from his previous visit. Marty and the 1955 Biff steal the almanac back and forth, but Marty and 
+									Doc retrieve it, until Biff crashes into a manure truck. Marty burns the almanac, reversing Biff's changes to the timeline, as Doc hovers above in 
+									the time machine. Before Marty can join him inside, the DeLorean is struck by lightning, and disappears. A Western Union courier immediately arrives 
+									and delivers a letter to Marty; it is from Doc, who explains that he was transported back to 1885. Marty races back into town to find the 1955 Doc, 
+									who had just helped the original Marty return to 1985. Shocked by Marty's sudden reappearance, Doc faints.
+								</p>
+								<p>
+									Provided by <a href="https://en.wikipedia.org/wiki/Back_to_the_Future_Part_II" target="_blank">Wikipedia</a> under
+									<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">Creative Commons</a>
+								</p>
 							</div>
 						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">	
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Trailer
-									</h3>
-								</div>
-							</a>
-							<div id="collapseFour" class="panel-collapse collapse">
-								<div class="panel-body">
-									<div class="embed-responsive embed-responsive-16by9">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/qvsgGtivCgs" allowfullscreen></iframe>
-									</div>
-								</div>
+					</div> -->
+					<!-- Trailer -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseEleven">			
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Trailer
+								</h3>
 							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Reviews
-									</h3>
-								</div>
-							</a>
-							<div id="collapseFive" class="panel-collapse collapse">
-								<div class="text-center">
-									<p>
-										Personally I think this film is great hence me creating a website about the trilogy, however if you want to checkout out
-										the reviews before watching then I suggest you check out the links below.
-									</p>
-								</div>
-								<div class="text-center">
-									<a class="btn btn-primary" href="http://www.imdb.com/title/tt0088763/reviews?ref_=tt_urv" target="_blank">IMDb</a>
-									<a class="btn btn-primary" href="https://www.rottentomatoes.com/m/back_to_the_future/reviews/" target="_blank">Rotten Tomatoes</a>
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Trivia
-									</h3>
-								</div>
-							</a>
-							<div id="collapseSeven" class="panel-collapse collapse">
-								<div class="text-center panel-body">
-									<p>
-										If you're one of those film geeks who loves trivia then I suggest you head over to the link below!
-									</p>
-								</div>
-								<div class="text-center">
-									<a class="btn btn-primary" href="http://www.imdb.com/title/tt0088763/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
+						</a>
+						<div id="collapseEleven" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/MdENmefJRpw" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- Reviews -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwelve">			
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Reviews
+								</h3>
+							</div>
+						</a>
+						<div id="collapseTwelve" class="panel-collapse collapse">
+							<div class="panel-body text-center" id="reviews2"></div>
+						</div>
+					</div>
+					<!-- <div class="panel col-md-4">
+						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseThirteen">			
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">
+									Trivia
+								</h3>
+							</div>
+						</a>
+						<div id="collapseThirteen" class="panel-collapse collapse">
+							<div class="text-center panel-body">
+								<p>
+									If you're one of those film geeks who loves trivia then I suggest you head over to the link below!
+								</p>
+							</div>
+							<div class="text-center">
+								<a class="btn btn-primary" href="http://www.imdb.com/title/tt0096874/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
-			<div class="container">
-				<!-- need to add additional sections and rename the ID's -->
+			<!-- Back to the Future Part III -->
+			<div class="container col-md-4">
+				<!-- Movie Title -->
 				<div>
-					<h2 class="text-center">Back to the Future Part II</h2>
+					<h2 class="text-center trilogy-headings">Back to the Future Part III</h2>
 				</div>
+				<!-- Movie Poster -->
 				<div>
-					<div class="panel-group" id="accordionTwo">
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseSeven">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Overview
-									</h3>
-								</div>
-							</a>
-							<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-							<div id="collapseSeven" class="collapse">
-								<div class="panel-body">
-									<p>
-										The sequel to Back to the Future once again follows our main protagonist Marty McFly on his adventures through time!
-										In this adventure Marty must travel to the year 2015 to save his future children from the trouble they are in, however their
-										presence allows another main character to change their past thus altering the present (1985).
-									</p>
-								</div>
+					<img class="center-block trilogyPoster" id="moviePoster3" src="" alt="Movie Poster" width="182" height="268">
+				</div>
+				<!-- Accordion -->
+				<div class="panel-group" id="accordionThree">
+					<!-- Plot Summary -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseFourteen">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Plot Summary
+								</h3>
+							</div>
+						</a>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<div id="collapseFourteen" class="collapse">
+							<div class="panel-body" id="plotSummary3">
 							</div>
 						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseEight">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Plot
-									</h3>
-								</div>
-							</a>
-							<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-							<div id="collapseEight" class="collapse">
-								<div class="panel-body">
-									<h4 class="text-center">
-										<strong>Warning this section contains spoilers!</strong>
-									</h4>
-									<p>
-										On October 26, 1985, Dr. Emmett Brown arrives in the DeLorean time machine and persuades Marty McFly and his girlfriend, 
-										Jennifer Parker, to travel to the future with him, and help their future children. Biff Tannen witnesses their departure. 
-										They arrive on October 21, 2015, where Doc electronically knocks out Jennifer, and leaves her asleep in an alley, 
-										explaining that she should not have too much knowledge of future events. He has Marty pose as his own son and lookalike 
-										Marty Jr. to refuse an offer to participate in a robbery with Biff's grandson Griff, thus saving both of Marty's children 
-										from prison.
-									</p>
-									<p>
-										Marty switches places with Marty Jr. and refuses Griff's offer, but Griff goads Marty into a fight. 
-										Griff and his gang are arrested, saving Marty's future children. Before rejoining Doc, Marty purchases an almanac, 
-										containing the results of major sporting events from 1950 to 2000. Doc discovers it and warns Marty about attempting to 
-										profit from time travel, but before Doc can adequately dispose of it, they are interrupted by the police, who have found 
-										Jennifer incapacitated, and are taking her to her 2015 home. They pursue, as does Biff, who has overheard their conversation, 
-										and picked up the almanac that Doc discarded.
-									</p>
-									<p>
-										Jennifer wakes up in her 2015 home and hides from the McFly family. She overhears that her future self's life with Marty is not what she expected, 
-										due to his involvement in an automobile accident. She witnesses Marty being goaded by his co-worker, Douglas J. Needles, into a shady business deal, 
-										which leads to Marty's firing. Attempting to escape the house, Jennifer encounters her 2015 self and they both faint. While Marty and Doc attend to her, 
-										Biff steals the time machine and uses it to travel back to 1955 and give the almanac to his younger self to get rich betting, then returns to 2015. Marty, 
-										Doc, and an unconscious Jennifer return to 1985, unaware of Biff's actions.	
-									</p>
-									<p>
-										The 1985 they return to has altered: Biff has become wealthy and corrupt, and has changed Hill Valley into a chaotic dystopia. 
-										Marty's father, George, was killed in 1973 and Biff has forced Marty's mother, Lorraine, to marry him. Doc has been committed to an insane asylum. 
-										Marty and Doc determine that the 2015 Biff took the time machine to change 1985, and Marty learns from the alternate 1985 Biff that he got the almanac on 
-										November 12, 1955. Biff attempts to confront Marty, but Marty flees and returns to 1955 with Doc, leaving Jennifer on her own front porch.
-									</p>
-									<p>
-										Marty secretly follows the 1955 Biff, and watches him receive the almanac from his 2015 self. Marty then follows him to the high school's dance, 
-										being careful to avoid interrupting the events from his previous visit. Marty and the 1955 Biff steal the almanac back and forth, but Marty and 
-										Doc retrieve it, until Biff crashes into a manure truck. Marty burns the almanac, reversing Biff's changes to the timeline, as Doc hovers above in 
-										the time machine. Before Marty can join him inside, the DeLorean is struck by lightning, and disappears. A Western Union courier immediately arrives 
-										and delivers a letter to Marty; it is from Doc, who explains that he was transported back to 1885. Marty races back into town to find the 1955 Doc, 
-										who had just helped the original Marty return to 1985. Shocked by Marty's sudden reappearance, Doc faints.
-									</p>
-									<p>
-										Provided by <a href="https://en.wikipedia.org/wiki/Back_to_the_Future_Part_II" target="_blank">Wikipedia</a> under
-										<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">Creative Commons</a>
-									</p>
-								</div>
+					</div>
+					<!-- Cast -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseSixteen">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Cast
+								</h3>
+							</div>
+						</a>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<div id="collapseSixteen" class="collapse">
+							<div class="panel-body">
+								<ul id="actorList3"></ul>
 							</div>
 						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseNine">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Cast
-									</h3>
-								</div>
-							</a>
-							<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-							<div id="collapseNine" class="collapse">
-								<div class="panel-body">
-									<p class="text-center">
-										Below is a list of the main cast, for a more detailed cast list I would recommend checking out the full cast list at 
-										<a href="http://www.imdb.com/title/tt0096874/fullcredits?ref_=tt_cl_sm#cast" target="blank">imdb.com</a>
-									</p>
-									<ul>
-										<li>Michael J. Fox as Marty McFly, Marty McFly Jr. and Marlene McFly</li>
-										<li>Christoper Lloyd as Dr. Emmett "Doc" Brown</li>
-										<li>Thomas F.Wilson as Biff Tannen and Griff Tannen</li>
-										<li>Lea Thompson as Lorraine Baines-McFly</li>
-									</ul>
-								</div>
+					</div>					
+					<!-- <div class="panel col-md-12">
+						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseFifteen">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">
+									Plot
+								</h3>
 							</div>
-							<div class="panel">
-								<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTen">			
-									<div class="panel-heading">
-										<h3 class="panel-title text-center">
-											Trailer
-										</h3>
-									</div>
-								</a>
-								<div id="collapseTen" class="panel-collapse collapse">
-									<div class="panel-body">
-										<div class="embed-responsive embed-responsive-16by9">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/MdENmefJRpw" allowfullscreen></iframe>
-										</div>
-									</div>
-								</div>
+						</a>
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially
+						<div id="collapseFifteen" class="collapse">
+							<div class="panel-body">
+								<h4 class="text-center">
+									<strong>Warning this section contains spoilers!</strong>
+								</h4>
+								<p>
+									On November 12, 1955, Marty McFly discovers that his friend, Dr. Emmett Brown, is now trapped in 1885. Marty and Doc's 1955 self use the information in Doc's 
+									1885 letter to locate and repair the DeLorean. Marty spots a tombstone with Doc's name, dated six days after the letter, learning that Doc was killed by Biff 
+									Tannen's great-grandfather, Buford Tannen. Marty takes a picture of the tombstone and travels back to 1885 to save Doc.
+								</p>
+								<p>
+									Marty arrives on September 2, 1885, in the middle of a Cavalry pursuit of Indians. When the fuel line is torn, Marty hides the car in a cave and walks to Hill 
+									Valley. He meets his Irish-born great-great-grandparents, Seamus and Maggie McFly, and runs afoul of Buford and his gang. Buford tries to hang Marty, but Doc 
+									rescues him. Doc agrees to leave 1885, but because commercial gasoline is not yet available, the DeLorean cannot reach 88 miles per hour under its own power.
+								</p>
+								<p>
+									Doc devises a plan to use a locomotive to push the DeLorean up to the required speed. While he and Marty explore a rail spur they intend to use, they spot a 
+									horse-drawn wagon going amok. Doc saves the passenger, Clara Clayton, and the two fall in love. Marty thwarts Buford's attempt to kill Doc at a town festival, 
+									whereupon Buford challenges Marty to a showdown in two days. Doc's name disappears from the photograph of his tombstone, but the date remains unchanged; Doc 
+									warns Marty that he might be the one killed by Buford.
+								</p>
+								<p>
+									The night before their departure, Marty and Doc place the DeLorean onto the rail spur. Unable to convince Clara the truth that he is from the future, Doc is 
+									spurned. Doc returns to the town saloon for a binge, but Marty goes to the saloon, and convinces Doc to leave with him. Doc drinks a single shot of whiskey 
+									and passes out. Buford arrives early and calls out Marty, but Marty refuses to duel. Doc revives after drinking the bartender's special "Wake-Up Juice" and 
+									tries fleeing with Marty, but Buford's gang captures Doc, forcing Marty to duel. During a fistfight, Buford destroys the tombstone, is knocked unconscious 
+									into a wagon full of manure, and is then arrested for an earlier robbery. Marty and Doc depart to steal the locomotive.
+								</p>
+								<p>
+									As Clara is leaving on the train, she overhears a salesman discussing how heartbroken Doc was at the saloon. Clara applies the emergency brake and goes back 
+									to town. She discovers Doc's model of the time machine and rides after him. Having stolen the train at gunpoint, Doc and Marty begin pushing the DeLorean along 
+									the spur line, attempting to get it up to 88 miles per hour. Clara boards the locomotive, while Doc climbs towards the DeLorean. Doc encourages Clara to join him. 
+									As she climbs to Doc, Clara falls and hangs by her dress. Marty passes his 2015-era hoverboard to Doc so he can save Clara. They coast away from the train as 
+									Marty returns alone to 1985 while the locomotive falls off the unfinished bridge.
+								</p>
+								<p>
+									Marty arrives on October 27, 1985, escaping the powerless DeLorean before it is destroyed by an oncoming freight train. He discovers that everything has returned 
+									to the improved timeline, and finds Jennifer sleeping on her front porch. He uses the lessons he learned in 1885 to avoid being goaded into a street race with 
+									Douglas J. Needles, avoiding a possible automobile accident. Remembering that this accident would have sent Marty's life spiraling downward by 2015, Jennifer 
+									opens a fax message she kept from 2015, and watches as its text regarding Marty's firing disappears.
+								</p>
+								<p>
+									As Marty and Jennifer witness the time machine wreckage, a locomotive equipped with a flux capacitor appears, manned by Doc, Clara, and their two children Jules 
+									and Verne. Doc gives Marty a photo of the two of them by the clockworks at the 1885 festival. Jennifer asks about the fax, and Doc tells them it means that the 
+									future has not been written yet. Doc’s then departs and the train disappears into an unknown time.
+								</p>
+								<p>
+									Provided by <a href="https://en.wikipedia.org/wiki/Back_to_the_Future_Part_III" target="_blank">Wikipedia</a> under
+									<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">Creative Commons</a>
+								</p>
 							</div>
-							<div class="panel">
-								<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseEleven">			
-									<div class="panel-heading">
-										<h3 class="panel-title text-center">
-											Reviews
-										</h3>
-									</div>
-								</a>
-								<div id="collapseEleven" class="panel-collapse collapse">
-									<div class="panel-body text-center">
-										<p>
-											Personally I think this film is great hence me creating a website about the trilogy, however if you want to checkout out
-											the reviews before watching then I suggest you check out the links below.
-										</p>
-									</div>
-									<div class="text-center">
-										<a class="btn btn-primary" href="http://www.imdb.com/title/tt0096874/reviews?ref_=tt_urv" target="_blank">IMDb</a>
-										<a class="btn btn-primary" href="https://www.rottentomatoes.com/m/back_to_the_future_2/reviews/" target="_blank">Rotten Tomatoes</a>
-									</div>
-								</div>
+						</div>
+					</div> -->
+					<!-- Trailer -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseSeventeen">			
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Trailer
+								</h3>
 							</div>
-							<div class="panel">
-								<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwelve">			
-									<div class="panel-heading">
-										<h3 class="panel-title text-center">
-											Trivia
-										</h3>
-									</div>
-								</a>
-								<div id="collapseTwelve" class="panel-collapse collapse">
-									<div class="text-center panel-body">
-										<p>
-											If you're one of those film geeks who loves trivia then I suggest you head over to the link below!
-										</p>
-									</div>
-									<div class="text-center">
-										<a class="btn btn-primary" href="http://www.imdb.com/title/tt0096874/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
-									</div>
+						</a>
+						<div id="collapseSeventeen" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/3C8c3EoEfw4" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div>
-					<h2 class="text-center">Back to the Future Part III</h2>
-				</div>
-				<div>
-					<div class="panel-group" id="accordionThree">
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseThirteen">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Overview
-									</h3>
-								</div>
-							</a>
-							<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-							<div id="collapseThirteen" class="collapse">
-								<div class="panel-body">
-									<p>
-										The third and final film in the trilogy once again follows the adventures of Marty McFly. This time Marty must travel back to 
-										1885 to save his friend Dr/Emmett "Doc" Brown before Biff's great grandfather Burford Tannen attempts to kill him.
-									</p>
-								</div>
+					<!-- Reviews -->
+					<div class="panel panel-primary">
+						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseEighteen">			
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Reviews
+								</h3>
 							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseFourteen">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Plot
-									</h3>
-								</div>
-							</a>
-							<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-							<div id="collapseFourteen" class="collapse">
-								<div class="panel-body">
-									<h4 class="text-center">
-										<strong>Warning this section contains spoilers!</strong>
-									</h4>
-									<p>
-										On November 12, 1955, Marty McFly discovers that his friend, Dr. Emmett Brown, is now trapped in 1885. Marty and Doc's 1955 self use the information in Doc's 
-										1885 letter to locate and repair the DeLorean. Marty spots a tombstone with Doc's name, dated six days after the letter, learning that Doc was killed by Biff 
-										Tannen's great-grandfather, Buford Tannen. Marty takes a picture of the tombstone and travels back to 1885 to save Doc.
-									</p>
-									<p>
-										Marty arrives on September 2, 1885, in the middle of a Cavalry pursuit of Indians. When the fuel line is torn, Marty hides the car in a cave and walks to Hill 
-										Valley. He meets his Irish-born great-great-grandparents, Seamus and Maggie McFly, and runs afoul of Buford and his gang. Buford tries to hang Marty, but Doc 
-										rescues him. Doc agrees to leave 1885, but because commercial gasoline is not yet available, the DeLorean cannot reach 88 miles per hour under its own power.
-									</p>
-									<p>
-										Doc devises a plan to use a locomotive to push the DeLorean up to the required speed. While he and Marty explore a rail spur they intend to use, they spot a 
-										horse-drawn wagon going amok. Doc saves the passenger, Clara Clayton, and the two fall in love. Marty thwarts Buford's attempt to kill Doc at a town festival, 
-										whereupon Buford challenges Marty to a showdown in two days. Doc's name disappears from the photograph of his tombstone, but the date remains unchanged; Doc 
-										warns Marty that he might be the one killed by Buford.
-									</p>
-									<p>
-										The night before their departure, Marty and Doc place the DeLorean onto the rail spur. Unable to convince Clara the truth that he is from the future, Doc is 
-										spurned. Doc returns to the town saloon for a binge, but Marty goes to the saloon, and convinces Doc to leave with him. Doc drinks a single shot of whiskey 
-										and passes out. Buford arrives early and calls out Marty, but Marty refuses to duel. Doc revives after drinking the bartender's special "Wake-Up Juice" and 
-										tries fleeing with Marty, but Buford's gang captures Doc, forcing Marty to duel. During a fistfight, Buford destroys the tombstone, is knocked unconscious 
-										into a wagon full of manure, and is then arrested for an earlier robbery. Marty and Doc depart to steal the locomotive.
-									</p>
-									<p>
-										As Clara is leaving on the train, she overhears a salesman discussing how heartbroken Doc was at the saloon. Clara applies the emergency brake and goes back 
-										to town. She discovers Doc's model of the time machine and rides after him. Having stolen the train at gunpoint, Doc and Marty begin pushing the DeLorean along 
-										the spur line, attempting to get it up to 88 miles per hour. Clara boards the locomotive, while Doc climbs towards the DeLorean. Doc encourages Clara to join him. 
-										As she climbs to Doc, Clara falls and hangs by her dress. Marty passes his 2015-era hoverboard to Doc so he can save Clara. They coast away from the train as 
-										Marty returns alone to 1985 while the locomotive falls off the unfinished bridge.
-									</p>
-									<p>
-										Marty arrives on October 27, 1985, escaping the powerless DeLorean before it is destroyed by an oncoming freight train. He discovers that everything has returned 
-										to the improved timeline, and finds Jennifer sleeping on her front porch. He uses the lessons he learned in 1885 to avoid being goaded into a street race with 
-										Douglas J. Needles, avoiding a possible automobile accident. Remembering that this accident would have sent Marty's life spiraling downward by 2015, Jennifer 
-										opens a fax message she kept from 2015, and watches as its text regarding Marty's firing disappears.
-									</p>
-									<p>
-										As Marty and Jennifer witness the time machine wreckage, a locomotive equipped with a flux capacitor appears, manned by Doc, Clara, and their two children Jules 
-										and Verne. Doc gives Marty a photo of the two of them by the clockworks at the 1885 festival. Jennifer asks about the fax, and Doc tells them it means that the 
-										future has not been written yet. Doc’s then departs and the train disappears into an unknown time.
-									</p>
-									<p>
-										Provided by <a href="https://en.wikipedia.org/wiki/Back_to_the_Future_Part_III" target="_blank">Wikipedia</a> under
-										<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">Creative Commons</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseFifteen">
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Cast
-									</h3>
-								</div>
-							</a>
-							<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
-							<div id="collapseFifteen" class="collapse">
-								<div class="panel-body">
-									<p class="text-center">
-										Below is a list of the main cast, for a more detailed cast list I would recommend checking out the full cast list at 
-										<a href="http://www.imdb.com/title/tt0099088/fullcredits?ref_=tt_cl_sm#cast" target="blank">imdb.com</a>
-									</p>
-									<ul>
-										<li>Michael J. Fox as Marty McFly and Seamus McFly</li>
-										<li>Christoper Lloyd as Dr. Emmett "Doc" Brown</li>
-										<li>Thomas F.Wilson as Buford "Mad Dog" Tannen and Biff Tannen</li>
-										<li>Mary Steenburgen as Clara Clayton</li>
-										<li>Lea Thompson as Maggie McFly and Lorraine Baines-McFly</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseSixteen">			
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Trailer
-									</h3>
-								</div>
-							</a>
-							<div id="collapseSixteen" class="panel-collapse collapse">
-								<div class="panel-body">
-									<div class="embed-responsive embed-responsive-16by9">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/3C8c3EoEfw4" allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseSeventeen">			
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Reviews
-									</h3>
-								</div>
-							</a>
-							<div id="collapseSeventeen" class="panel-collapse collapse">
-								<div class="panel-body text-center">
-									<p>
-										Personally I think this film is great hence me creating a website about the trilogy, however if you want to checkout out
-										the reviews before watching then I suggest you check out the links below.
-									</p>
-								</div>
-								<div class="text-center">
-									<a class="btn btn-primary" href="http://www.imdb.com/title/tt0099088/reviews?ref_=tt_urv" target="_blank">IMDb</a>
-									<a class="btn btn-primary" href="https://www.rottentomatoes.com/m/back_to_the_future_3/reviews/" target="_blank">Rotten Tomatoes</a>
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseEighteen">			
-								<div class="panel-heading">
-									<h3 class="panel-title text-center">
-										Trivia
-									</h3>
-								</div>
-							</a>
-							<div id="collapseEighteen" class="panel-collapse collapse">
-								<div class="text-center panel-body">
-									<p>
-										If you're one of those film geeks who loves trivia then I suggest you head over to the link below!
-									</p>
-								</div>
-								<div class="text-center">
-									<a class="btn btn-primary" href="http://www.imdb.com/title/tt0099088/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
-								</div>
-							</div>
+						</a>
+						<div id="collapseEighteen" class="panel-collapse collapse">
+							<div class="panel-body text-center" id="reviews3"></div>
 						</div>
 					</div>
+					<!-- <div class="panel col-md-6">
+						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseNineteen">			
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">
+									Trivia
+								</h3>
+							</div>
+						</a>
+						<div id="collapseNineteen" class="panel-collapse collapse">
+							<div class="text-center panel-body">
+								<p>
+									If you're one of those film geeks who loves trivia then I suggest you head over to the link below!
+								</p>
+							</div>
+							<div class="text-center">
+								<a class="btn btn-primary" href="http://www.imdb.com/title/tt0099088/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -643,6 +604,7 @@
 	</footer>
 
 	<script src="./lib/jquery/jquery-3.2.1.js"></script>
+	<script src="./lib/myScript.js"></script>
 	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -60,42 +60,42 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img class="img-center" src="../images/trilogy_one.jpg" alt="Marty and Doc at Doc's house in 1955">
+						<img class="center-block" src="../images/trilogy_one.jpg" alt="Marty and Doc at Doc's house in 1955">
 						<div class="carousel-caption">
 							<h4 class="text-border">Marty and Doc at Doc's house in 1955</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img class="img-center" src="../images/trilogy_two.jpg" alt="Marty playing guitar at the Enchanment Under the Sea dance">
+						<img class="center-block" src="../images/trilogy_two.jpg" alt="Marty playing guitar at the Enchanment Under the Sea dance">
 						<div class="carousel-caption">
 							<h4>Marty playing guitar at the Enchanment Under the Sea dance</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img class="img-center" src="../images/trilogy_three.jpg" alt="Marty and Doc in the future">
+						<img class="center-block" src="../images/trilogy_three.jpg" alt="Marty and Doc in the future">
 						<div class="carousel-caption">
 							<h4>Marty and Doc in the future</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img class="img-center" src="../images/trilogy_four.jpg" alt="Marty in the future, in front of Jaws 19">
+						<img class="center-block" src="../images/trilogy_four.jpg" alt="Marty in the future, in front of Jaws 19">
 						<div class="carousel-caption">
 							<h4>Marty in the future, in front of Jaws 19</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img class="img-center" src="../images/trilogy_five.jpg" alt="Marty and Doc in 1885">
+						<img class="center-block" src="../images/trilogy_five.jpg" alt="Marty and Doc in 1885">
 						<div class="carousel-caption">
 							<h4>Marty and Doc in 1885</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img class="img-center" src="../images/trilogy_six.jpg" alt="Marty after just arriving in 1885">
+						<img class="center-block" src="../images/trilogy_six.jpg" alt="Marty after just arriving in 1885">
 						<div class="carousel-caption">
 							<h4>Marty after just arriving in 1885</h4>
 						</div>
@@ -120,33 +120,42 @@
 			</div>
 		</div>
 		<div class="container box">
-			<div>
+			<!-- click info -->
+			<div class="container col-md-12">
 				<h4 class="text-center">Click on each section to expand for more information.</h4>
-				<h2 class="text-center">Back to the Future</h2>
 			</div>
-			<div class="container">
-				<!-- add panel, assign id accordion to link panels together and only having one open at a time -->
-				<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+			<!-- Back to the Future -->
+			<div class="container col-md-4">
+				<!-- Movie Title -->
+				<div>
+					<h2 class="text-center trilogy-headings">Back to the Future</h2>
+				</div>
+				<!-- Movie Poster -->
+				<div>
+					<img class="center-block trilogyPoster" id="moviePoster" src="" alt="Movie Poster" width="182" height="268">
+				</div>
+				<!-- Acordion -->
 				<div class="panel-group" id="accordion">
-					<div class="panel col-md-6">
+					<!-- Plot Summary -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-							<div class="panel-heading ">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
-									Overview
+									Plot Summary
 								</h3>
 							</div>
 						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 						<div id="collapseOne" class="collapse">
-							<div class="panel-body" id="overview">
-							</div>
+							<div class="panel-body" id="plotSummary"></div>
 						</div>
 					</div>
-					<div class="panel col-md-6">
+					<!-- Cast -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
 									Cast
 								</h3>
@@ -159,16 +168,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-12">
+					<!-- Plot -->
+					<!-- <div class="panel col-md-12">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
-									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together -->
+									<!-- wrap the panel title in anchor link to link to panel body, data-toggle added for toggle effect, data parent for grouping panels together
 									Plot
 								</h3>
 							</div>
 						</a>
-						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially
 						<div id="collapseTwo" class="collapse">
 							<div class="panel-body">
 								<h4 class="text-center">
@@ -226,11 +236,12 @@
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="panel col-md-4">
+					</div> -->
+					<!-- Trailer -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">	
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Trailer
 								</h3>
 							</div>
@@ -243,20 +254,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-4">
+					<!-- Reviews -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Reviews
 								</h3>
 							</div>
 						</a>
 						<div id="collapseFive" class="panel-collapse collapse">
-							<div class="panel-body text-center" id="reviews">
+							<div class="panel-body" id="reviews">
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-4">
+					<!-- <div class="panel col-md-6">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
@@ -274,33 +286,40 @@
 								<a class="btn btn-primary" href="http://www.imdb.com/title/tt0088763/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
-			<div class="container">
+			<!-- Back to the Future Part II -->
+			<div class="container col-md-4">
+				<!-- Movie Title -->
 				<div>
-					<h2 class="text-center">Back to the Future Part II</h2>
+					<h2 class="text-center trilogy-headings">Back to the Future Part II</h2>
 				</div>
+				<!-- Movie Poster -->
+				<div>
+					<img class="center-block trilogyPoster" id="moviePoster2" src="" alt="Movie Poster" width="182" height="268">
+				</div>
+				<!-- Accordion -->
 				<div class="panel-group" id="accordionTwo">
-					<div class="panel col-md-6">
+					<!-- Plot Summary -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseEight">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
-									Overview
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Plot Summary
 								</h3>
 							</div>
 						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 						<div id="collapseEight" class="collapse">
-							<div class="panel-body" id="overview2">
-
-							</div>
+							<div class="panel-body" id="plotSummary2"></div>
 						</div>
 					</div>
-					<div class="panel col-md-6">
+					<!-- Cast -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTen">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Cast
 								</h3>
 							</div>
@@ -312,7 +331,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-12">
+					<!-- Plot -->
+					<!-- <div class="panel col-md-12">
 						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseNine">
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
@@ -320,7 +340,7 @@
 								</h3>
 							</div>
 						</a>
-						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially
 						<div id="collapseNine" class="collapse">
 							<div class="panel-body">
 								<h4 class="text-center">
@@ -369,11 +389,12 @@
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="panel col-md-4">
+					</div> -->
+					<!-- Trailer -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseEleven">			
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Trailer
 								</h3>
 							</div>
@@ -386,10 +407,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-4">
+					<!-- Reviews -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwelve">			
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Reviews
 								</h3>
 							</div>
@@ -398,7 +420,7 @@
 							<div class="panel-body text-center" id="reviews2"></div>
 						</div>
 					</div>
-					<div class="panel col-md-4">
+					<!-- <div class="panel col-md-4">
 						<a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseThirteen">			
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
@@ -416,32 +438,41 @@
 								<a class="btn btn-primary" href="http://www.imdb.com/title/tt0096874/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
-			<div class="container">
+			<!-- Back to the Future Part III -->
+			<div class="container col-md-4">
+				<!-- Movie Title -->
 				<div>
-					<h2 class="text-center">Back to the Future Part III</h2>
+					<h2 class="text-center trilogy-headings">Back to the Future Part III</h2>
 				</div>
+				<!-- Movie Poster -->
+				<div>
+					<img class="center-block trilogyPoster" id="moviePoster3" src="" alt="Movie Poster" width="182" height="268">
+				</div>
+				<!-- Accordion -->
 				<div class="panel-group" id="accordionThree">
-					<div class="panel col-md-6">
+					<!-- Plot Summary -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseFourteen">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
-									Overview
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
+									Plot Summary
 								</h3>
 							</div>
 						</a>
 						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
 						<div id="collapseFourteen" class="collapse">
-							<div class="panel-body" id="overview3">
+							<div class="panel-body" id="plotSummary3">
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-6">
+					<!-- Cast -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseSixteen">
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Cast
 								</h3>
 							</div>
@@ -453,7 +484,7 @@
 							</div>
 						</div>
 					</div>					
-					<div class="panel col-md-12">
+					<!-- <div class="panel col-md-12">
 						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseFifteen">
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
@@ -461,7 +492,7 @@
 								</h3>
 							</div>
 						</a>
-						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially -->
+						<!-- we can add class="panel-collapse collapse in" here if we want to make a panel open initially
 						<div id="collapseFifteen" class="collapse">
 							<div class="panel-body">
 								<h4 class="text-center">
@@ -514,11 +545,12 @@
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="panel col-md-4">
+					</div> -->
+					<!-- Trailer -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseSeventeen">			
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Trailer
 								</h3>
 							</div>
@@ -531,10 +563,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel col-md-4">
+					<!-- Reviews -->
+					<div class="panel panel-primary">
 						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseEighteen">			
-							<div class="panel-heading">
-								<h3 class="panel-title text-center">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">
 									Reviews
 								</h3>
 							</div>
@@ -543,7 +576,7 @@
 							<div class="panel-body text-center" id="reviews3"></div>
 						</div>
 					</div>
-					<div class="panel col-md-4">
+					<!-- <div class="panel col-md-6">
 						<a data-toggle="collapse" data-parent="#accordionThree" href="#collapseNineteen">			
 							<div class="panel-heading">
 								<h3 class="panel-title text-center">
@@ -561,7 +594,7 @@
 								<a class="btn btn-primary" href="http://www.imdb.com/title/tt0099088/trivia?ref_=tt_trv_trv" target="_blank">IMDb Trivia Page</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

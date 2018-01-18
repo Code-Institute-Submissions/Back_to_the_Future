@@ -34,9 +34,7 @@ fit my website however I wanted to credit them to be on the safe side */
 .content {
 	flex: 1;
 }
-.container-custom {
-	padding: 15px;
-}
+
 
 /* --- Footer --- */
 
@@ -83,6 +81,10 @@ h2.trilogy-headings {
 	background-color: #FFFFFF;
 }
 
+ul.trilogy-list {
+	padding-left: 15px;
+}
+
 /* remove top margin */
 
 /* .panel-group .panel+.panel { /* this removes the top line of the panel
@@ -119,3 +121,18 @@ h2.trilogy-headings {
 	max-width: 50px; /*change width
 	overflow: hidden;
 } */
+
+/* rent/purchase styling */
+
+img.logo {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+div.rentLinks-top {
+	margin-top: 10px;
+}
+
+div.rentLinks-bottom {
+	margin-bottom: 20px;
+}

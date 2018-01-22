@@ -26,11 +26,7 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 
 ### Features Left to Implement
 
-- Favicon
-- Indivual page titles
-- Add links to allow user to get back to top of page quickly
-- Add trivia links to trilogy page.
-- Test locally hosting videos
+- expandable click events on the timeline to reduce clutter
 
 ## Tech Used
 
@@ -46,6 +42,18 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
     - This library was used for creating the timeline.
 - [jQuery](https://jquery.com/)
     - This is used in conjunction with Bootstrap.
+
+## Testing carried out
+
+## Deployment
+
+I chose to use GitHub pages to host my website. I have carried out the steps below to deploy my website to GitHub pages.
+
+1. Firstly I set up a gh-pages branch within my Back_to_the_Future repository.
+2. I then ran the `git checkout gh-pages` command to change to that branch and I ensured that there was a base `<href>` on each page and that all the filepaths for images were correct.
+3. I then merged my master branch into my gh-pages branch by running the command `git merge master`.
+4. I then ran `git push` to push my local branch to the gh-pages remote branch.
+5. I then went to "https://liam-cafearo.github.io/Back_to_the_Future/index.html" to check that it had deployed as planned.
 
 ## Contributing
 

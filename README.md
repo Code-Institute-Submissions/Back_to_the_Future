@@ -1,5 +1,19 @@
 # Stream One Project: Back to the Future Website.
 
+## Table of Contents
+
+- [Overview](#overview)
+    - [What is this website for?](#what-is-this-website-for)
+    - [What does the website allow users to do?](#what-does-the-website-allow-users-to-do)
+    - [How does it work?](#how-does-it-work)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+- [Tech Used](#tech-used)
+- [Testing Carried Out](#testing-carried-out)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+
 ## Overview
 
 ### What is this website for?
@@ -43,7 +57,9 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 - [jQuery](https://jquery.com/)
     - This is used in conjunction with Bootstrap.
 
-## Testing carried out
+## Testing Carried Out
+
+This section is to be filled out.
 
 ## Deployment
 

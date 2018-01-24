@@ -71,6 +71,10 @@ I chose to use GitHub pages to host my website. I have carried out the steps bel
 4. I then ran `git push` to push my local branch to the gh-pages remote branch.
 5. I then went to "https://liam-cafearo.github.io/Back_to_the_Future/index.html" to check that it had deployed as planned.
 
+## Credits
+
+
+
 ## Contributing
 
 At present any requests to contribute towards the project will be denied as this project must be work that I am solely responsible for.

@@ -88,13 +88,6 @@ ul.trilogy-list {
 	padding-left: 15px;
 }
 
-/* remove top margin */
-
-/* .panel-group .panel+.panel { /* this removes the top line of the panel
-	margin-top: 0px;
-	margin-bottom: 0px;
-} */
-
 /* --- Navbar Style --- */
 
 .navbar-inverse {
@@ -120,10 +113,10 @@ ul.trilogy-list {
 	writing-mode: vertical-rl;
 	text-orientation: sideways;
 }
-/* .vis-item-content {
-	max-width: 50px; /*change width
+ .vis-item-custom {
+	max-width: 50px;
 	overflow: hidden;
-} */
+}
 
 /* rent/purchase styling */
 

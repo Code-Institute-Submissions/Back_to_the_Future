@@ -12,6 +12,7 @@
 - [Tech Used](#tech-used)
 - [Testing Carried Out](#testing-carried-out)
 - [Deployment](#deployment)
+- [Credits](#credits)
 - [Contributing](#contributing)
 
 ## Overview
@@ -40,7 +41,7 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 
 ### Features Left to Implement
 
-- expandable click events on the timeline to reduce clutter
+- specific dates on timeline.
 
 ## Tech Used
 
@@ -59,7 +60,48 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 
 ## Testing Carried Out
 
-This section is to be filled out.
+### Scenario One: Contact Page: JavaScript - Error modals 
+
+#### Scenario Steps:
+
+1. Open home page.
+2. Naviate to contact page.
+3. Fill in form but miss out a required field
+4. Press submit.
+5. Repeat steps 3 and 4 another two times, changing the missing required field each time.
+
+#### Desired Outcomes
+
+If successful the user should recieve a modal error message advising them that the they need to fill in the required fields.
+
+### Scenario Two: Timeline Page
+
+#### Scenario Steps:
+
+1. Open home page.
+2. Navigate to the timeline page.
+3. Click on each section to see if the buttons expose and expanded box containing the related information i.e. plot, trailers etc.
+
+#### Desired Outcomes
+
+The user should see the information in the expanded boxes and the trailers.
+
+### Scenario Three: Timeline: Usability
+
+#### Scenario Steps:
+
+1. Open home page.
+2. Navigate to Timeline page.
+3. Use the timeline and check the following:
+    - Do you have to click the timeline in order to use it?
+    - Can you scroll side to side?
+    - Does Zoom in and out work?
+    - If you click on an event does the event expand to show more information?
+    - If you click on another event does the previously selected event collapse?
+
+#### Desired Outcomes
+
+The timeline should pass the requirements above.
 
 ## Deployment
 
@@ -73,7 +115,11 @@ I chose to use GitHub pages to host my website. I have carried out the steps bel
 
 ## Credits
 
-
+- [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) - used the advice on the website to dsiplay my footer correctly using flexbox.
+- [Simen Daehlin/Eventyret](https://github.com/Eventyret) Simen provided me a lesson on how to write the JavaScript for my API calls, whilst I didn't copy any code Simen did dictate to me some of the code to get me started and to help me understand how this is done, I then expanded on that code so that I could pull in further infomration for the trilogy page.
+- [The Open Movie Database](https://www.omdbapi.com/) Provided the API information for the trilogy page.
+- [Futurepedia](http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline) Provided the infomration for the timeline.
+- There are also various images on the website that I have used for the project however these were taken from [Google Image Search](https://www.google.co.uk/imghp?hl=en&tab=wi), [Pexels](https://www.pexels.com/) and [unplash.com](https://unsplash.com/) I have used these under the fair usage policy however if the you feel these should be removed please contact me.
 
 ## Contributing
 

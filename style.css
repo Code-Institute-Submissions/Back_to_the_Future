@@ -109,11 +109,7 @@ ul.trilogy-list {
 .vis-timeline {
 	border: none;
 }
-.vis-inner {
-	writing-mode: vertical-rl;
-	text-orientation: sideways;
-}
- .vis-item-custom {
+.vis-item-custom {
 	max-width: 150px;
 	overflow: hidden;
 }

@@ -103,6 +103,18 @@ The user should see the information in the expanded boxes and the trailers.
 
 The timeline should pass the requirements above.
 
+### Scenario Four: Timeline: Date visibility.
+
+#### Scenario Steps:
+
+1. Open home page.
+2. Navigate to Timeline Page
+3. Scroll down and check that the month and year in the bottom left hand corner are displayed on the timeline.
+
+#### Desired Outcomes
+
+On page load user should see the month and year in the bottom left hand corner or the timeline.
+
 ## Deployment
 
 I chose to use GitHub pages to host my website. I have carried out the steps below to deploy my website to GitHub pages.

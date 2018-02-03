@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./lib/vis/dist/vis.css" type="text/css">
 	<!-- placed stylesheet here so that it overides the vis stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<!-- link to vis JavaScript -->
+	<!-- link to vis JavaScript placed in head otherwise it doesn't load-->
 	<script src="./lib/vis/dist/vis.js"></script>
 	<link rel="icon" href="./images/favicon.ico" type="image/gif" sizes="16x16">
 </head>
@@ -98,14 +98,16 @@
 			<div class="text-center">
 				<h1> The Timeline</h1>
 				<!--<p>The timeline below points out major points in the movies in the chronological order that they happened</p>-->
-				<p class="text-center"><strong>Please note:</strong> This timeline works best when viewing on a computer.</p>
+				<p class="text-center">
+					<strong>Please note:</strong> This timeline works best when viewing on a computer.
+				</p>
 				<p>
 					The timeline below is only a brief timeline to give you an idea of the order of events, some of the times I have estimated as the specific times
 					are not made apparent in the movies. I have taken the timeline information from the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, 
 					which I would checkout for a more complete explanation of the timeline(s).
 				</p>
 				<p>
-					If you  find any discrepancies please get in touch! you can get in touch using the link below.
+					If you find any discrepancies please get in touch! you can get in touch using the link below.
 				</p>
 			</div>
 			<div class="text-center">
@@ -115,6 +117,8 @@
 		<div class="col-12 box timeline-box">
 			<div>
 				<p class="text-center">
+					To get started click on the timeline to enable the scroll and zoom features, click again to disable them.
+					<br>
 					To gather more specific dates and times you can zoom in and out by either using the mouse wheel, if your are on a smartphone or tablet you can 
 					pinch to zoom.
 					<br>

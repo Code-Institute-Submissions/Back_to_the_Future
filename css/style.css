@@ -1,3 +1,5 @@
+/* --- General --- */
+
 body{
 	padding-top: 75px; /* added so that the header doesn't overlap the content */
 	background-color: #EEEEEE;
@@ -6,17 +8,14 @@ body{
 	background-repeat: no-repeat;
 	}
 
-.jumbotron {
+.jumbotron, 
+.box {
 	background-color: #FFFFFF;
 	border-radius: 25px;
 	margin-top: 25px;
 	border: 3px solid grey;
 }
 .box { /* adds styling around page content to match custom jumbotron styling */
-	background-color: #FFFFFF;
-	border-radius: 25px;
-	margin-top: 25px;
-	border: 3px solid grey;
 	padding: 0px;
 }
 
@@ -26,8 +25,7 @@ div.contactForm {
 
 /* --- Flexbox --- */
 
-/* The code for flexbox was from the advice found here https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/, i have ammended this to
-fit my website however I wanted to credit them to be on the safe side */
+/* The code for flexbox was inspired by this: https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
 
 .body-custom {
 	display: flex;
@@ -37,7 +35,6 @@ fit my website however I wanted to credit them to be on the safe side */
 .content {
 	flex: 1;
 }
-
 
 /* --- Footer --- */
 

@@ -19,7 +19,7 @@
 
 ### What is this website for?
 
-This is my Stream One project for [Code Institue](https://www.codeinstitute.net/). The website is a fan website for the film trilogy "Back to the Future".
+This is my Stream One project for [Code Institute](https://www.codeinstitute.net/). The website is a fan website for the film trilogy "Back to the Future".
 
 ### What does the website allow users to do?
 
@@ -86,7 +86,7 @@ If successful the user should recieve a modal error message advising them that t
 
 The user should see the information in the expanded boxes and the trailers.
 
-### Scenario Three: Timeline: Usability
+### Scenario Three: Timeline - Usability
 
 #### Scenario Steps:
 
@@ -103,7 +103,7 @@ The user should see the information in the expanded boxes and the trailers.
 
 The timeline should pass the requirements above.
 
-### Scenario Four: Timeline: Date visibility.
+### Scenario Four: Timeline - Date visibility.
 
 #### Scenario Steps:
 

@@ -76,7 +76,6 @@ $(document).ready(function() {
 	$("div.vis-item").click(function() {
 		$("div.vis-selected").toggleClass("vis-item-custom");
 	});
-});
 
 	// API requests from https://www.themoviedb.org/
 
@@ -101,3 +100,4 @@ $(document).ready(function() {
 			})
 			.catch((error) => console.log(error))
 	}
+});

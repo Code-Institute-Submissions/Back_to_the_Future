@@ -11,6 +11,12 @@
     - [Features Left to Implement](#features-left-to-implement)
 - [Tech Used](#tech-used)
 - [Testing Carried Out](#testing-carried-out)
+    - [Scenario One: JavaScript error modals for contact page](#scenario-one-javascript-error-modals-for-contact-page)
+    - [Scenario Two: Timeline Page](#scenario-two-timeline-page)
+    - [Scenario Three: Timeline usability](#scenario-three-timeline-usability)
+    - [Scenario Four: Timeline date visibility](#scenario-four-timeline-date-visibility)
+    - [Web page relative paths](#web-page-relative-paths)
+    - [Timeline script tag location](#timeline-script-tag-location)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Contributing](#contributing)
@@ -41,7 +47,7 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 
 ### Features Left to Implement
 
-- specific dates on timeline.
+Nothing left to implement to complete the project.
 
 ## Tech Used
 
@@ -60,7 +66,7 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 
 ## Testing Carried Out
 
-### Scenario One: Contact Page: JavaScript - Error modals 
+### Scenario One: JavaScript error modals for contact page 
 
 #### Scenario Steps:
 
@@ -86,7 +92,7 @@ If successful the user should recieve a modal error message advising them that t
 
 The user should see the information in the expanded boxes and the trailers.
 
-### Scenario Three: Timeline - Usability
+### Scenario Three: Timeline usability
 
 #### Scenario Steps:
 
@@ -103,7 +109,7 @@ The user should see the information in the expanded boxes and the trailers.
 
 The timeline should pass the requirements above.
 
-### Scenario Four: Timeline - Date visibility.
+### Scenario Four: Timeline date visibility
 
 #### Scenario Steps:
 
@@ -114,6 +120,21 @@ The timeline should pass the requirements above.
 #### Desired Outcomes
 
 On page load user should see the month and year in the bottom left hand corner or the timeline.
+
+### Web page relative paths
+
+When deploying the web site to GitHub Pages I found that the links to my other pages on the site did not work, this was due to the filepaths not being
+relative. I updated the filepaths and the page links worked.
+
+### Timeline script tag location
+
+The following JavaScript files were placed in the `<head>` of the timeline.html file:
+
+- vis.js
+- timeLineData.js
+- timeLineOptions.js
+
+When these were placed at the bottom of the `<body>` I found that the JavaScript did not load correctly on the timeline page. 
 
 ## Deployment
 

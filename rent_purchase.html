@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="icon" href="../images/favicon.ico" type="image/gif" sizes="16x16">
 </head>
+
 <body class="body-custom">
 	<!-- nav element with class navbar and we have changed the color by replacing deafult stylying 'navbar-default' with 'navbar-inverse'
 		Added navbar-fixed-top so that the the navbar is fixed to the top of the screen even when the user scrolls down the page,
@@ -20,24 +22,35 @@
 			<!-- create a brand area inside the nav tags, this is a link <a> inside a <div>
 			 	 Styled with Navbar-header and navbar-brand-->
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/index.html">BACK TO THE FUTURE</a> <!--need to come up with a website name but for testing we will call it back to the future-->
+				<a class="navbar-brand" href="/index.html">BACK TO THE FUTURE</a>
+				<!--need to come up with a website name but for testing we will call it back to the future-->
 				<!-- add a menu button that collapses and expands on click with data-toggle and class navbar-toggle collapsed"
 					 we feed the element(s) we wnat to be targeted into a data-target attribute by passing an id or class -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
 					<!-- you can add a glyph of choosing but icon-bar is becoming the defacto-->
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			<!-- create an unordered list with class 'nav' and 'navbar-nav' for styling purposes, navbar-right makes the links appear to the right rather than right
 				 after the brand. Add the data-target id here as well and the enable the collapse/expand behaviour by adding collapsed and navbar-collapse -->
 			<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="/the_trilogy.html">The Trilogy</a></li>
-				<li><a href="/timeline.html">Timeline</a></li>
-				<li><a href="/rent_purchase.html">Rent/Purchase</a></li>
-				<li><a href="/contact.html">Contact Me</a></li>
+				<li>
+					<a href="/index.html">Home</a>
+				</li>
+				<li>
+					<a href="/the_trilogy.html">The Trilogy</a>
+				</li>
+				<li>
+					<a href="/timeline.html">Timeline</a>
+				</li>
+				<li>
+					<a href="/rent_purchase.html">Rent/Purchase</a>
+				</li>
+				<li>
+					<a href="/contact.html">Contact Me</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -83,12 +96,13 @@
 			<div class="container">
 				<h1>Where can I view the film Trilogy?</h1>
 				<p class="text-center">
-					Unfortunately the film is no longer shown in movie theatres, unless you are lucky to see a special screening at your local cinema! 
-					Below are some links where you can rent or buy the movie.
+					Unfortunately the film is no longer shown in movie theatres, unless you are lucky to see a special screening at your local
+					cinema! Below are some links where you can rent or buy the movie.
 				</p>
 				<p class="text-center">
-					Also don't forget to check out <a href="https://www.netflix.com/" target="_blank">Netflix</a>, <a href="https://www.amazon.co.uk/" 
-					target="_blank">Amazon Prime</a> and other streaming services as the Trilogy is on these sites from time to time.
+					Also don't forget to check out
+					<a href="https://www.netflix.com/" target="_blank">Netflix</a>,
+					<a href="https://www.amazon.co.uk/" target="_blank">Amazon Prime</a> and other streaming services as the Trilogy is on these sites from time to time.
 				</p>
 				<p class="text-center">
 					Enjoy!
@@ -104,9 +118,10 @@
 							<img class="logo" src="../images/amazon_logo_plain.jpg" alt="Amazon Logo" width="250" height="60" />
 						</div>
 						<div>
-							<a href="https://www.amazon.co.uk/Back-Future-Billy-Zane/dp/B00I4CGJUQ/ref=sr_1_5?ie=UTF8&qid=1512920267&sr=8-5&keywords=back+to+the+future" target="_blank" class="btn btn-primary btn-default">Back to the Future</a>
+							<a href="https://www.amazon.co.uk/Back-Future-Billy-Zane/dp/B00I4CGJUQ/ref=sr_1_5?ie=UTF8&qid=1512920267&sr=8-5&keywords=back+to+the+future"
+							 target="_blank" class="btn btn-primary btn-default">Back to the Future</a>
 							<a href="https://www.amazon.co.uk/gp/video/detail/B00FZQZGEO/ref=pd_cbs_318_1" target="_blank" class="btn btn-primary btn-default">Back to the Future Part II</a>
-							<a href="https://www.amazon.co.uk/gp/video/detail/B00FYO4UN0/ref=pd_cbs_318_1" target="_blank" class="btn btn-primary btn-default">Back to the Future Part III</a>	
+							<a href="https://www.amazon.co.uk/gp/video/detail/B00FYO4UN0/ref=pd_cbs_318_1" target="_blank" class="btn btn-primary btn-default">Back to the Future Part III</a>
 						</div>
 					</div>
 					<div class="col-md-6 rentLinks-top">
@@ -117,7 +132,7 @@
 						<div>
 							<a href="https://play.google.com/store/movies/details/Back_to_the_Future?id=EBTKoUxhbJk" target="_blank" class="btn btn-primary btn-default">Back to the Future</a>
 							<a href="https://play.google.com/store/movies/details/Back_to_the_Future_2?id=QFBpr7ZmzoE" target="_blank" class="btn btn-primary btn-default">Back to the Future Part II</a>
-							<a href="https://play.google.com/store/movies/details/Back_to_the_Future_3?id=mEPFZIO15a4" target="_blank" class="btn btn-primary btn-default">Back to the Future Part III</a>	
+							<a href="https://play.google.com/store/movies/details/Back_to_the_Future_3?id=mEPFZIO15a4" target="_blank" class="btn btn-primary btn-default">Back to the Future Part III</a>
 						</div>
 					</div>
 				</div>
@@ -130,7 +145,7 @@
 						<div>
 							<a href="https://www.microsoft.com/en-gb/store/movies/back-to-the-future/8d6kgwzl5cvm" target="_blank" class="btn btn-primary btn-default">Back to the Future</a>
 							<a href="https://www.microsoft.com/en-gb/store/movies/back-to-the-future-part-ii/8d6kgwzl64c5" target="_blank" class="btn btn-primary btn-default">Back to the Future Part II</a>
-							<a href="https://www.microsoft.com/en-gb/store/movies/back-to-the-future-part-iii/8d6kgwzl5c22" target="_blank" class="btn btn-primary btn-default">Back to the Future Part III</a>	
+							<a href="https://www.microsoft.com/en-gb/store/movies/back-to-the-future-part-iii/8d6kgwzl5c22" target="_blank" class="btn btn-primary btn-default">Back to the Future Part III</a>
 						</div>
 					</div>
 					<div class="col-md-6 rentLinks-bottom">
@@ -155,4 +170,5 @@
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

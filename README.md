@@ -2,24 +2,24 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-    - [What is this website for?](#what-is-this-website-for)
-    - [What does the website allow users to do?](#what-does-the-website-allow-users-to-do)
-    - [How does it work?](#how-does-it-work)
-- [Features](#features)
-    - [Existing Features](#existing-features)
-    - [Features Left to Implement](#features-left-to-implement)
-- [Tech Used](#tech-used)
-- [Testing Carried Out](#testing-carried-out)
-    - [Scenario One: JavaScript error modals for contact page](#scenario-one-javascript-error-modals-for-contact-page)
-    - [Scenario Two: Timeline Page](#scenario-two-timeline-page)
-    - [Scenario Three: Timeline usability](#scenario-three-timeline-usability)
-    - [Scenario Four: Timeline date visibility](#scenario-four-timeline-date-visibility)
-    - [Web page relative paths](#web-page-relative-paths)
-    - [Timeline script tag location](#timeline-script-tag-location)
-- [Deployment](#deployment)
-- [Credits](#credits)
-- [Contributing](#contributing)
+* [Overview](#overview)
+  * [What is this website for?](#what-is-this-website-for)
+  * [What does the website allow users to do?](#what-does-the-website-allow-users-to-do)
+  * [How does it work?](#how-does-it-work)
+* [Features](#features)
+  * [Existing Features](#existing-features)
+  * [Features Left to Implement](#features-left-to-implement)
+* [Tech Used](#tech-used)
+* [Testing Carried Out](#testing-carried-out)
+  * [Scenario One: JavaScript error modals for contact page](#scenario-one-javascript-error-modals-for-contact-page)
+  * [Scenario Two: Timeline Page](#scenario-two-timeline-page)
+  * [Scenario Three: Timeline usability](#scenario-three-timeline-usability)
+  * [Scenario Four: Timeline date visibility](#scenario-four-timeline-date-visibility)
+  * [Web page relative paths](#web-page-relative-paths)
+  * [Timeline script tag location](#timeline-script-tag-location)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Contributing](#contributing)
 
 ## Overview
 
@@ -39,11 +39,11 @@ The website is built with HTML for the structure, CSS and Bootstrap for the styl
 
 ### Existing Features
 
-- Home Page
-- Trilogy Page
-- Timeline Page with interactive timeline
-- Rent/Purchase page
-- Contact Form with JavaScript Validation
+* Home Page
+* Trilogy Page
+* Timeline Page with interactive timeline
+* Rent/Purchase page
+* Contact Form with JavaScript Validation
 
 ### Features Left to Implement
 
@@ -51,22 +51,22 @@ Nothing left to implement to complete the project.
 
 ## Tech Used
 
-- HTML5
-    - This provides the basic layout of the webpage.
-- CSS3
-    - I have used this to style certain elements on the sites pages.
-- [Bootstrap](http://getbootstrap.com)
-    - I have used bootstrap to give my website a clean and responsive layout.
-- JavaScript
-    - This has been used to provide form validation on the contact form to ensure that users get a response when they haven't filled in part of the form. This is also used in Vis.js.
-- [Vis.js](http://visjs.org/index.html)
-    - This library was used for creating the timeline.
-- [jQuery](https://jquery.com/)
-    - This is used in conjunction with Bootstrap.
+* HTML5
+  * This provides the basic layout of the webpage.
+* CSS3
+  * I have used this to style certain elements on the sites pages.
+* [Bootstrap](http://getbootstrap.com)
+  * I have used bootstrap to give my website a clean and responsive layout.
+* JavaScript
+  * This has been used to provide form validation on the contact form to ensure that users get a response when they haven't filled in part of the form. This is also used in Vis.js.
+* [Vis.js](http://visjs.org/index.html)
+  * This library was used for creating the timeline.
+* [jQuery](https://jquery.com/)
+  * This is used in conjunction with Bootstrap.
 
 ## Testing Carried Out
 
-### Scenario One: JavaScript error modals for contact page 
+### Scenario One: JavaScript error modals for contact page
 
 #### Scenario Steps:
 
@@ -99,11 +99,11 @@ The user should see the information in the expanded boxes and the trailers.
 1. Open home page.
 2. Navigate to Timeline page.
 3. Use the timeline and check the following:
-    - Do you have to click the timeline in order to use it?
-    - Can you scroll side to side?
-    - Does Zoom in and out work?
-    - If you click on an event does the event expand to show more information?
-    - If you click on another event does the previously selected event collapse?
+   * Do you have to click the timeline in order to use it?
+   * Can you scroll side to side?
+   * Does Zoom in and out work?
+   * If you click on an event does the event expand to show more information?
+   * If you click on another event does the previously selected event collapse?
 
 #### Desired Outcomes
 
@@ -130,11 +130,11 @@ relative. I updated the filepaths and the page links worked.
 
 The following JavaScript files were placed in the `<head>` of the timeline.html file:
 
-- vis.js
-- timeLineData.js
-- timeLineOptions.js
+* vis.js
+* timeLineData.js
+* timeLineOptions.js
 
-When these were placed at the bottom of the `<body>` I found that the JavaScript did not load correctly on the timeline page. 
+When these were placed at the bottom of the `<body>` I found that the JavaScript did not load correctly on the timeline page.
 
 ## Deployment
 
@@ -148,11 +148,11 @@ I chose to use GitHub pages to host my website. I have carried out the steps bel
 
 ## Credits
 
-- [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) - used the advice on the website to dsiplay my footer correctly using flexbox.
-- [Simen Daehlin/Eventyret](https://github.com/Eventyret) Simen provided me a lesson on how to write the JavaScript for my API calls, whilst I didn't copy any code Simen did dictate to me some of the code to get me started and to help me understand how this is done, I then expanded on that code so that I could pull in further infomration for the trilogy page.
-- [The Open Movie Database](https://www.omdbapi.com/) Provided the API information for the trilogy page.
-- [Futurepedia](http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline) Provided the infomration for the timeline.
-- There are also various images on the website that I have used for the project however these were taken from [Google Image Search](https://www.google.co.uk/imghp?hl=en&tab=wi), [Pexels](https://www.pexels.com/) and [unplash.com](https://unsplash.com/) I have used these under the fair usage policy however if the you feel these should be removed please contact me.
+* [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) - used the advice on the website to dsiplay my footer correctly using flexbox.
+* [Simen Daehlin/Eventyret](https://github.com/Eventyret) Simen provided me a lesson on how to write the JavaScript for my API calls, whilst I didn't copy any code Simen did dictate to me some of the code to get me started and to help me understand how this is done, I then expanded on that code so that I could pull in further infomration for the trilogy page.
+* [The Open Movie Database](https://www.omdbapi.com/) Provided the API information for the trilogy page.
+* [Futurepedia](http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline) Provided the infomration for the timeline.
+* There are also various images on the website that I have used for the project however these were taken from [Google Image Search](https://www.google.co.uk/imghp?hl=en&tab=wi), [Pexels](https://www.pexels.com/) and [unplash.com](https://unsplash.com/) I have used these under the fair usage policy however if the you feel these should be removed please contact me.
 
 ## Contributing
 

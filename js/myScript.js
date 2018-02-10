@@ -1,111 +1,66 @@
+// I must note that in additon to my tutor providing guidance on the code below, Simen Daehilin also did. The code however is typed by me and not copied.
+
 const OMDB_API_KEY = "32ef44fc";
-const BTTF1_IMDB_ID = "tt0088763";
-const BTTF2_IMDB_ID = "tt0096874";
+const BTTF1_IMDB_ID = "tt0088763"; // Back to the future 1
+const BTTF2_IMDB_ID = "tt0096874"; // Back to the future 2
+const BTTF3_IMDB_ID = "tt0099088"; // Back to the future 3
+const OMDB_URL = "https://www.omdbapi.com/?i=";
+const MOVIES = [BTTF1_IMDB_ID, BTTF2_IMDB_ID, BTTF3_IMDB_ID];
 
+// The code from below is from 'http://visjs.org' in order to display the timeline, there are some changes i.e. the dates to suit my requirments
+// DOM element where the Timeline will be attached
+const container = document.getElementById("visualization");
+//  Create a Timeline
+const timeline = new vis.Timeline(container, items, options);
+
+console.log(MOVIES);
 $(document).ready(function() {
-	// Contact Form Script - Checks if required fields are empty and outputs corresponding message.
-	$("#submitButton").click(function() {
-		if(document.contactForm.fname.value === "") {
-			$('#errorModal').modal("show");
-			return false;
-		} else if(document.contactForm.sname.value === "") {
-			$('#errorModal').modal("show");
-			return false;
-		} else if(document.contactForm.email.value === "") {
-			$('#errorModal').modal("show");
-			return false;
-		} else {
-			$('#successModal').modal("show");
-			return false;
-		}
-	});
+  // Contact Form Script - Checks if required fields are empty and outputs corresponding message.
+  $("#submitButton").click(function() {
+    const firstName = document.contactForm.fname.value;
+    const surName = document.contactForm.fname.value;
+    const email = document.contactForm.fname.value;
+    if (firstName || surName || email === "") {
+      $("#errorModal").modal("show"); // error modal displays message to user to fill in the required fields
+      return false;
+    } else {
+      $("#successModal").modal("show"); // success modal displays message to user that they have successfully filled in the form.
+      return false;
+    }
+  });
 
-	// Trilogy API scripts - The code for the API's was inspired by Simen Daehlin's guidance.
+  //  click function for timeline
 
-	getMovies();
+  $("div.vis-item").click(function() {
+    $("div.vis-selected").toggleClass("vis-item-custom");
+  });
 
+  // API requests from https://www.themoviedb.org/
+  // Trilogy API scripts - The code for the API's was inspired by Simen Daehlin's guidance.
+  MOVIES.forEach(movie => {
+    fetch(OMDB_URL + movie + "&plot=full&apikey=" + OMDB_API_KEY)
+      .then(res => res.json())
+      .then(movieData => {
+        console.log(movieData);
+        let actors = movieData.Actors.split(",");
+        actors.forEach(function(actor) {
+          $("#actorBttf" + [i + 1]).append("<li>" + actor + "</li>");
+        });
 
-	function populateMovieInfo(movie) {
+        // Adds Movie Ratings
 
-		var imdbID = movie.imdbID;
+        $("#reviews" + [i + 1]).append(
+          "<li>" +
+            movieData.Ratings[i].Source +
+            ":" +
+            movieData.Ratings[i].Value +
+            "</li>"
+        );
 
-		// Styles Actor list
-
-		var actorList = movie.Actors.split(",");
-		actorList.forEach(function(actor) {
-			if (imdbID == "tt0088763") {
-				$('#actorList').append("<li>" + actor + "</li>");
-			} else if (imdbID == "tt0096874") {
-				$('#actorList2').append("<li>" + actor + "</li>");
-			} else {
-				$('#actorList3').append("<li>" + actor + "</li>");
-			}
-		});
-
-		// Adds Movie Ratings
-
-		for (var i = 0; i < movie.Ratings.length; i++) { // if i is less than movie.Ratings.length then increment i.
-			if (imdbID == "tt0088763") {
-				$('#reviews').append("<li>" + movie.Ratings[i].Source + ": "  + movie.Ratings[i].Value + "</li>");
-			} else if (imdbID == "tt0096874") {
-				$('#reviews2').append("<li>" + movie.Ratings[i].Source + ": " + movie.Ratings[i].Value + "</li>");
-			} else {
-				$('#reviews3').append("<li>" + movie.Ratings[i].Source + ": " + movie.Ratings[i].Value + "</li>");
-			}
-		}
-
-			
-		if (imdbID == "tt0088763") {
-			// adds plot summary
-			$('#plotSummary').html(movie.Plot);
-			// adds movie poster
-			$('#moviePoster').attr("src", movie.Poster);
-		} else if (imdbID == "tt0096874") {
-			$('#plotSummary2').html(movie.Plot);
-			$('#moviePoster2').attr("src", movie.Poster);
-			// add jquery for other items here
-		} else {
-			$('#plotSummary3').html(movie.Plot);
-			$('#moviePoster3').attr("src", movie.Poster);
-			// add jquery for other items here
-		}
-	}
-
-	//  click function for timeline
-
-	$("div.vis-item").click(function() {
-		$("div.vis-selected").toggleClass("vis-item-custom");
-	});
-
-	// API requests from https://www.themoviedb.org/
-
-	function getMovies() {
-
-		fetch("https://www.omdbapi.com/?i=tt0088763&plot=full&apikey=32ef44fc") // fetch api data
-			.then((res) => res.json()) // then turn the response into json format
-			.then((movie) => {			// then store it as movie and let populateMovieInfo take over
-				populateMovieInfo(movie);
-			})
-			.catch((error) => console.log(error)); // if there is an error log the error to the console
-		fetch("https://www.omdbapi.com/?i=tt0096874&plot=full&apikey=32ef44fc")
-			.then((res) => res.json())
-			.then((movie) => {
-				populateMovieInfo(movie);
-			})
-			.catch((error) => console.log(error));
-		fetch("https://www.omdbapi.com/?i=tt0099088&plot=full&apikey=32ef44fc")
-			.then((res) => res.json())
-			.then((movie) => {
-				populateMovieInfo(movie);
-			})
-			.catch((error) => console.log(error));
-	}
+        $("#plotBttf" + [i + 1]).html(movie.Plot);
+        // adds movie poster
+        $("#posterBttf" + [i + 1]).attr("src", movie.Poster);
+      })
+      .catch(error => console.log(error));
+  });
 });
-
-	// The code from below is from 'http://visjs.org' in order to display the timeline, there are some changes i.e. the dates to suit my requirments
-
-	// DOM element where the Timeline will be attached
-	var container = document.getElementById('visualization');
-	
-	//  Create a Timeline
-	var timeline = new vis.Timeline(container, items, options);

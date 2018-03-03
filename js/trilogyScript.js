@@ -10,30 +10,25 @@ const MOVIES = [BTTF1_IMDB_ID, BTTF2_IMDB_ID, BTTF3_IMDB_ID];
 $(document).ready(function() {
   // API requests from https://www.themoviedb.org/
   // Trilogy API scripts - The code for the API's was inspired by Simen Daehlin's guidance.
-      MOVIES.forEach((movie, i) => {
-        fetch(OMDB_URL + movie + "&plot=full&apikey=" + OMDB_API_KEY)
-          .then(res => res.json())
-          .then(movieData => {
-            console.log(movieData);
-            let actors = movieData.Actors.split(",");
-            actors.forEach((actor, i) => {
-              $("#actorBttf" + [i]).append("<li>" + actor + "</li>");
-            });
+  MOVIES.forEach((movie, movieIndex) => {
+    fetch(OMDB_URL + movie + "&plot=full&apikey=" + OMDB_API_KEY)
+      .then(res => res.json())
+      .then(movieData => {
+        // Adds actors 
+        let actors = movieData.Actors.split(",");
+        actors.forEach(actor => {
+          $("#actorBttf" + movieIndex).append("<li>" + actor + "</li>");
+        });
 
-      // Adds Movie Ratings
-      movieData.Ratings.forEach((rating, i) => {
-        $("#reviews" + [i]).append(
-          "<li>" +
-            movieData.Ratings[i].Source +
-            ":" +
-            movieData.Ratings[i].Value +
-            "</li>"
-        );
-      })
+        // Adds Movie Ratings
+        movieData.Ratings.forEach(rating => {
+          $("#reviews" + movieIndex).append("<li>" + rating.Source + ":" + rating.Value + "</li>");
+        })
 
-        $("#plotBttf" + [i]).html(movieData.Plot);
+        // adds movie plot
+        $("#plotBttf" + movieIndex).html(movieData.Plot);
         // adds movie poster
-        $("#posterBttf" + [i]).attr("src", movieData.Poster);
+        $("#posterBttf" + movieIndex).attr("src", movieData.Poster);
       })
       .catch(error => console.log(error));
   });

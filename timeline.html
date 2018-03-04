@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +18,7 @@
 	<script src="./js/timeLineOptions.js"></script>
 	<link rel="icon" href="./images/favicon.ico" type="image/gif" sizes="16x16">
 </head>
+
 <body class="body-custom">
 	<!-- nav element with class navbar and we have changed the color by replacing deafult stylying 'navbar-default' with 'navbar-inverse'
 		Added navbar-fixed-top so that the the navbar is fixed to the top of the screen even when the user scrolls down the page,
@@ -30,12 +32,12 @@
 				<a class="navbar-brand" href="./index.html">BACK TO THE FUTURE</a> <!--need to come up with a website name but for testing we will call it back to the future-->
 				<!-- add a menu button that collapses and expands on click with data-toggle and class navbar-toggle collapsed"
 					 we feed the element(s) we wnat to be targeted into a data-target attribute by passing an id or class -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
 					<!-- you can add a glyph of choosing but icon-bar is becoming the defacto-->
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			<!-- create an unordered list with class 'nav' and 'navbar-nav' for styling purposes, navbar-right makes the links appear to the right rather than right
 				 after the brand. Add the data-target id here as well and the enable the collapse/expand behaviour by adding collapsed and navbar-collapse -->
@@ -98,14 +100,14 @@
 		<div class="jumbotron container">
 			<div class="text-center">
 				<h1> The Timeline</h1>
-				<!--<p>The timeline below points out major points in the movies in the chronological order that they happened</p>-->
 				<p class="text-center">
 					<strong>Please note:</strong> This timeline works best when viewing on a computer.
 				</p>
 				<p>
-					The timeline below is only a brief timeline to give you an idea of the order of events, some of the times I have estimated as the specific times
-					are not made apparent in the movies. I have taken the timeline information from the <a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline" target="_blank">Back to the Future wiki</a>, 
-					which I would checkout for a more complete explanation of the timeline(s).
+					The timeline below is only a brief timeline to give you an idea of the order of events, some of the times I have estimated
+					as the specific times are not made apparent in the movies. I have taken the timeline information from the
+					<a href="http://backtothefuture.wikia.com/wiki/Back_to_the_Future_timeline"
+					 target="_blank">Back to the Future wiki</a>, which I would checkout for a more complete explanation of the timeline(s).
 				</p>
 				<p>
 					If you find any discrepancies please get in touch! you can get in touch using the link below.
@@ -119,12 +121,10 @@
 			<div>
 				<p class="text-center">
 					To get started click on the timeline to enable the scroll and zoom features, click again to disable them.
-					<br>
-					To gather more specific dates and times you can zoom in and out by either using the mouse wheel, if your are on a smartphone or tablet you can 
-					pinch to zoom.
-					<br>
-					The timeline can also be moved from left to right by either pressing down and holding the left-click on the mouse or using you fingers
-					if on a smartphone or tablet.
+					<br> To gather more specific dates and times you can zoom in and out by either using the mouse wheel, if your are on a smartphone
+					or tablet you can pinch to zoom.
+					<br> The timeline can also be moved from left to right by either pressing down and holding the left-click on the mouse or
+					using you fingers if on a smartphone or tablet.
 				</p>
 				<hr>
 			</div>
@@ -136,8 +136,9 @@
 	</footer>
 
 	<script src="./lib/jquery/jquery-3.2.1.js"></script>
-	<script src="./js/myScript.js"></script>
+	<script src="./js/timelineScript.js"></script>
 	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

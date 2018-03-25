@@ -139,7 +139,7 @@ When these were placed at the bottom of the `<body>` I found that the JavaScript
 
 ### XSS errors on "The Trilogy" page
 
-This is a known issue within Chrome and is awaiting a fix from the Chrome developers, more information can be found here: [https://stackoverflow.com/questions/48714879/error-parsing-header-x-xss-protection-google-chrome]. The issue should be resolved in Chrome v66 as stated here: [https://bugs.chromium.org/p/chromium/issues/detail?id=807304].
+This is a known issue within Chrome and is awaiting a fix from the Chrome developers, more information can be found here: https://stackoverflow.com/questions/48714879/error-parsing-header-x-xss-protection-google-chrome. The issue should be resolved in Chrome v66 as stated here: https://bugs.chromium.org/p/chromium/issues/detail?id=807304.
 
 ## Deployment
 
@@ -149,7 +149,7 @@ I chose to use GitHub pages to host my website. I have carried out the steps bel
 2. I then ran the `git checkout gh-pages` command to change to that branch and I ensured that there was a base `<href>` on each page and that all the filepaths for images were correct.
 3. I then merged my master branch into my gh-pages branch by running the command `git merge master`.
 4. I then ran `git push` to push my local branch to the gh-pages remote branch.
-5. I then went to [https://liam-cafearo.github.io/Back_to_the_Future/index.html] to check that it had deployed as planned.
+5. I then went to https://liam-cafearo.github.io/Back_to_the_Future/index.html to check that it had deployed as planned.
 
 ## Credits
 
